@@ -1,0 +1,420 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;elos&rdquo; Documentation by &ldquo;GSRThemes9&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;elos&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 04/03/2014<br>
+					By: GSRThemes9<br>
+					Email: <a href="gsrthemes9@gmail.com">GSRThemes9</a>
+					<br>
+					<br><br><br><br><br>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0"><strong>Hi! Thank you for purchasing my template.</strong><br>
+If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/gsrthemes9">here</a>. Thanks so much!<br><br>
+This file will teach you how to set up and use the “<span class="center">elos</span>” Theme. <br><br>
+
+Best regards,<br>
+<strong>GSRThemes9</strong></p>
+		  </div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#phpcode">PHP Code</a></li>
+		  <li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a Responsive HTML5 / CSS3 for Desktop, tablet, mobile phone…
+		All of the information within the main content area is nested within a div with an class of "container". 
+		The sidebar's content is within a div with an class of "content-right-sidebar". 
+		The general template structure is the same throughout the template. 
+		<br><br>
+		The html are commented well so you can easily make an update.</p>
+		
+		
+		<p>
+		<span class="added">&lt;!-- HEADER --&gt;</span><br><br>
+		
+		<span class="style1">Top area, display logo, navigation and slideshow. This navigation improves the css dropdown menu with animation. The navigation is nested within a div with an class of "menu", you can change the navigation by change the &lt;li&gt; url and text. This is similar for all pages. <br>
+		   <br>
+		  
+		  <strong>NAVIGATION MENU</strong><br>
+
+<pre >
+&lt;ul&gt;<br>&lt;li&gt;&lt;a href=&quot;index.html&quot; title=&quot;Home&quot;&gt;Home&lt;/a&gt;&lt;li&gt;<br>	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sliders&lt;/a&gt;<br>		&lt;ul&gt;<br>            &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Slider Type One&lt;/a&gt;&lt;/li&gt;					<br>            &lt;li&gt;&lt;a href=&quot;index-1.html&quot;&gt;Slider Type Two&lt;/a&gt;&lt;/li&gt;<br>            &lt;li&gt;&lt;a href=&quot;index-2.html&quot;&gt;Static Image Page&lt;/a&gt;&lt;/li&gt;<br>            &lt;li&gt;&lt;a href=&quot;index-3.html&quot;&gt;Video Page&lt;/a&gt;&lt;/li&gt;<br>		&lt;/ul&gt;<br>		&lt;/li&gt;<br>		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Features&lt;/a&gt;<br>            &lt;ul&gt;<br>            &lt;li&gt;&lt;a href=&quot;typography.html&quot;&gt;Typography&lt;/a&gt;&lt;/li&gt;<br>            &lt;li&gt;&lt;a href=&quot;elements.html&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;<br>            &lt;li&gt;&lt;a href=&quot;pricing-tables.html&quot;&gt;Pricing Tables&lt;/a&gt;&lt;/li&gt;<br>            &lt;li&gt;&lt;a href=&quot;columns.html&quot;&gt;Page Columns&lt;/a&gt;&lt;/li&gt;<br>            &lt;li&gt;&lt;a href=&quot;testimonials.html&quot;&gt;Testimonials&lt;/a&gt;&lt;/li&gt;<br>            &lt;li&gt;&lt;a href=&quot;faqs.html&quot;&gt;FAQs&lt;/a&gt;&lt;/li&gt;<br>            &lt;li&gt;&lt;a href=&quot;tabs.html&quot;&gt;Tabs&lt;/a&gt;&lt;/li&gt;<br> &lt;/ul&gt;</pre>
+
+      <strong>SLIDES CONTAINER</strong><br>
+
+      <br>
+      <span class="style1">This is the jquery slider and only used in the main page. The slider content is nested within a div with an class of "sliderContainer". You can change and update the slider images and text in this section. </span>
+		
+		</p>
+		
+		
+	<span class="added">&lt;!-- BEGIN CONTENT --&gt;</span><br>
+      <br>
+      <span class="style1">      All information of all pages content area is nested within a div with an id of "content_area" and the sidebar content is within a div with an id of "sidebar". <br>
+      
+      <pre >
+&lt;div class = 'item item1'&gt;<br>  &lt;div class = 'inner'&gt;<br>     &lt;div class = 'text1'&gt;&lt;span&gt;Welcome to &lt;b&gt;elos&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;<br>     &lt;div class = 'text2'&gt;&lt;span&gt;elos Provides Smart and Flexible Design Unique Pages,&lt;br /&gt;Awesome Slideshows, Unique Color Variations.&lt;br /&gt;Easy-to-customize and fully Featured design.&lt;br /&gt;Create Outstanding Website  in Minutes!&lt;/span&gt;<br>     &lt;div class=&quot;morebut&quot;&gt;&lt;a href=&quot;#&quot;&gt;know more features&lt;/a&gt;&lt;/div&gt;<br>   &lt;/div&gt;<br>&lt;/div&gt;<br>&lt;/div&gt;</pre>      
+      
+      <br>
+      </span><span class="added">&lt;!-- END OF  CONTENT --&gt;</span><br>
+      <br>
+
+      <br>
+
+      <span class="added">&lt;!-- BEGIN FOOTER --&gt;</span><br>
+
+      <br>
+      <span class="style1">Footer content here. </span><br>
+      <br>
+      <span class="added">&lt;!-- END OF FOOTER --&gt;</span><br><br>
+	  
+		
+		
+		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+
+<pre>	#container a {
+		color: #someColor;
+	} 
+</pre>
+
+		<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+
+
+		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This "elos" theme uses 2 main CSS files:
+		
+		<ul>
+		<li>reset.css (reset.css)</li>
+		<li>style.css (theme style.css)</li>
+        <li>responsive-leyouts.css</li>
+        <li>font-awesome.min.css - We used for this Theme. You can use all icons of Font-Awesome here: http://fortawesome.github.io/Font-Awesome/icons/</li>
+		</ul>
+		
+		</p>
+
+		<p>I'm using three CSS files in this theme. The first one is a generic reset file. Many browser interpret the default behavior of html elements differently. By using a general reset CSS file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.</p> 
+
+		<p>The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>
+        
+        <p><strong>How to Use Diffrent Colors Themes</strong><br>
+        We are Providing 10 Predefined Colors for this Theme. If you want to use Diffrent Colors for this theme... Go to Header Section of "index.html" page. There you can find (form line number 36) the Commented code of the colors. You can just remove the comments witch color skin you want to use. (like this you can do rest of the pages as well).</p>
+		
+		<p>All the CSS is commented and separated in categories so it is really easy to find what you want.</p>
+
+<pre>	/* === HEADER Section === */
+        
+        
+        #site-wrapper {
+            max-width: 1000px;
+            margin: 10px auto auto auto;
+            background: #fff;
+            -webkit-box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        }
+        #logo {
+            min-width: 230px;
+            min-height: 65px;
+            margin: 23px 0px 25px 25px;
+            background: url(../images/logo.jpg) no-repeat left top;
+        }
+
+
+	/* === BODY Section === */
+	
+        #content {
+            margin: 16px 0 0 5px;
+            padding: 0 0 27px 0;
+        }
+        #content .container .five.columns {
+            width: 280px;
+            margin: 0px 25px 0px 25px;
+        }
+        ul.home-services-list {
+            float: left;
+            margin: -12px 0px 0px 0px;
+            padding: 0px;
+            width: 280px;
+        }
+        .home-services-list li {
+            margin: 0px;
+            padding: 11px 0px 0px 0px;
+            border-bottom: 1px solid #f0f0f0;
+            list-style-type: none;
+        }
+        .freshworks-gallery {
+            margin: 20px 30px 0px 20px;
+            height: 260px;
+            padding: 10px;
+            background-color: #eee;
+        }
+        .freshworks-content {
+            margin: 0px 35px 0px 0px;
+            width: 180px;
+            height: 225px;
+            padding: 15px 20px 20px 20px;
+            background-color: #fff;
+            float: left;
+            -webkit-box-shadow:  0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+            box-shadow:  1px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        }
+	
+	/* === Sidebar Section === */
+	
+        #content .content-right-sidebar {
+            float: right;
+            width: 280px;
+            margin: 10px 30px 0 0;
+            padding: 0 0 27px 30px;
+            border-left: 1px solid #f9f9f9;
+        }
+        #content .content-right-sidebar h2 {
+            border-left: 3px solid #ff0000;
+            padding: 8px 0px 0px 17px;
+            margin: 0px 0px 30px 0px;
+            color: #3c3c3c;
+            font-size: 21px;
+            background-color: #f3f3f3;
+            min-height: 32px;
+        }
+		
+	/* === FOOTER === */
+	
+    #page-footer {
+        margin: 0px 0px 0px 0px;
+        width: 100%;
+        background: #636363 url(../images/footer-bg.jpg) repeat-x left top;
+        float: left;
+        color: #eee;
+        min-height: 312px;
+        -webkit-box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+</pre>
+		
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<p>Any images that are placed within the blog section have 5px worth of padding and a light bluish background. If you would like to edit the display of these images, find the following section in the style sheet:</p>
+
+<pre>	#wrapper #blog img {
+		change styles here:
+	}
+</pre>
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports three Javascript files.</p>
+		
+		<ol>
+			<li>Slider Revolution</li>
+			<li>Main Menu</li>
+            <li>Shortslide</li>
+            <li>Tabs</li>
+            <li>Tipsy</li>
+            <li>Toogles</li>
+		</ol>
+		  
+		<ol>
+		
+		<li>
+		<strong>Slideshows:</strong> Each slideshow has some unique values you can set, like autorotation, and transition speed.<br><br>
+		[some Javascript goes here... ]
+	<br><br>
+	<strong>Main menu Script</strong>
+    <pre>
+    var ddsmoothmenu={
+
+        arrowimages: {down:[], right:[]},
+        transition: {overtime:<strong>300</strong>, outtime:<strong>300</strong>},
+        shadow: {enable:false, offsetx:5, offsety:5},
+        showhidedelay: {showdelay: <strong>100</strong>, hidedelay: <strong>200</strong>},
+    </pre>
+    
+    <br>
+	<strong>Slider Script</strong>
+	<br>
+<pre>
+var tpj=jQuery;
+tpj.noConflict();
+
+tpj(document).ready(function() {
+
+if (tpj.fn.cssOriginal!=undefined)
+	tpj.fn.css = tpj.fn.cssOriginal;
+
+	var api = tpj('.banner').revolution(
+		{
+			delay:<strong>9000</strong>,
+			startheight:<strong>510</strong>,
+			startwidth:<strong>1000</strong>,
+
+			hideThumbs:200,
+
+			thumbWidth:100,	  // Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+			thumbHeight:50,
+			thumbAmount:5,
+
+			navigationType:"none",	// bullet, thumb, none
+			navigationArrows:"solo", // nexttobullets, solo (old name verticalcentered), none
+
+			navigationStyle:"round", // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+
+
+			navigationHAlign:"center",	// Vertical Align top,center,bottom
+			navigationVAlign:"bottom",	// Horizontal Align left,center,right
+			navigationHOffset:0,
+			navigationVOffset:20,
+
+			soloArrowLeftHalign:"left",
+			soloArrowLeftValign:"center",
+			soloArrowLeftHOffset:20,
+			soloArrowLeftVOffset:0,
+
+			soloArrowRightHalign:"right",
+			soloArrowRightValign:"center",
+			soloArrowRightHOffset:20,
+			soloArrowRightVOffset:0,
+
+			touchenabled:"on",	// Enable Swipe Function : on/off
+			onHoverStop:"on",	// Stop Banner Timet at Hover on Slide on/off
+
+
+
+			stopAtSlide:2,	// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+			stopAfterLoops:0,	// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+
+			shadow:1,		 //0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
+			fullWidth:"<strong>off</strong>"	// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+});
+</pre>
+<br>
+
+	<br>
+		
+
+</li>
+		
+		</ol>
+        
+        <hr>
+		
+		<h3 id="phpcode"><strong>D) PHP Code</strong> - <a href="#toc">top</a></h3>
+        
+        Php code used in the "contact.php" file. You just replace the top code with your details.
+        
+    <pre>
+    
+    $name_of_your_site = &quot;<strong>yourcompanyname.com</strong>&quot;
+    $email_adress_reciever = &quot;<strong>gsrthemes9@gmail.com</strong>&quot;
+    
+    </pre>
+
+		
+		<hr>
+		
+	  <h3 id="psdFiles"><strong>E) PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've included 5 psds with this theme:</p>
+		
+			<ol>
+				<li>index1.psd</li>
+                <li>index2.psd</li>
+                <li>index3.psd</li>
+                <li>index4.psd</li>
+				<li>logo-1.psd</li>
+                <li>logo-2.psd</li>
+                <li>logo-3.psd</li>
+                <li>logo-4.psd</li>
+			</ol>
+		
+		<p>If you'd like to change the logo in the header, open "logo.psd", make the necessary adjustments, and then save the file as "logo.jpg" or "logo.png". Do the same for the buttons.</p> 
+		
+		<p>With these psds you can even create your own unique “elos” skin.</p>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>You add new fonts by adding them to your Fonts folder in your computers Control Panel or right click font file and "Install".</p>
+		
+		<p>Resources used:
+		
+		
+		<ul>
+<li>Fonts: – Google Fonts (Websafe fonts used)<br>
+http://www.google.com/webfonts (you can find the fonts by the name of the font)
+</li>
+
+<li>Icons used:<br>
+http://wefunction.com/2008/07/function-free-icon-set/<br>
+http://dryicons.com/free-icons/preview/coquette-icons-set/<br>
+http://www.iconarchive.com<br><br>
+</li>
+
+<li>Images Used: (heroturko.me, fotolia.com, www.julianburford.nl and shutterstock.com) All are royalty free images.<br>
+You should replace the images with your own images.
+		</ul>
+		
+		
+		<hr>
+		
+		<p>If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section. </p>
+		<p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. No guarantees, but I'll do my best to assist.</p>
+	    <p>To keep in touch with my latest PSD templates make sure to check out <a href="http://themeforest.net/user/GSRThemes9">http://themeforest.net/user/GSRThemes9</a> frequently.
+	    
+		</p><p>Best regards,</p>
+
+	  <p class="append-bottom alt large"><strong>GSRThemes9</strong></p>
+	  <p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+
+</body>
+</html>
