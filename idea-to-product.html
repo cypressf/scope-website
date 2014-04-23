@@ -81,7 +81,6 @@
         <div class="clearfix margin_top5"></div>
 
         <div class="container">
-        <div class="two_third">
             <h2><strong>Is P2P vulnerable to people stealing my data?</strong></h2>
       
             <p>Access to data over the P2P connection in this app is open to anyone with the same app and service name. Posts are shared across P2P based on newsfeed ids and mutual friend ids. In any scenario in which a peer is capable of acquiring overlapping newsfeed ids or friend ids, that peer will have access to any posts that match those ids.</p>
@@ -91,42 +90,24 @@
             <p>In the case of managing who is or is not authorized to connect via P2P, a user can choose who not to share data with. The app uses client’s IP address and MAC address to identify peers. If a user accepts the connection of peer, the WiFi-Direct device remembers that connection and automatically accept future requests from that phone. Again, with a rooted phone, another user can spoof a phone’s MAC Address to match one that has been authorized to connect P2P in order to connect to another phone automatically. A way this can be addressed in the future is using the Facebook user ID of each phone as well to judge whether or not a peer is allowed to connect on another layer of security built into the app.</p>
         
         </div>
-        <div class="one_third last">
-            <center><img src="images/Olaf_with_Shades.png" style="width:60%;"></center>
-        </div>
-        </div>
 
         <div class="clearfix margin_top5"></div>
 
         <div class="container">
-        <div class="one_third">
-            <center><img src="images/Olaf_with_Shades.png" style="width:60%;"></center>
-        </div>
-        <div class="two_third last">
             <h2><strong>Will peers have access to posts they don’t have permission to see?</strong></h2>
             <p>Currently peers will have access to public and mutual friend posts. Public posts do have privacy permission issues, but mutual friend posts may have some complications. In the case that a post by a mutual friend has been set to be visible only to the original receiver of the post, a peer will still be sent that post because the app does not address privacy settings.</p>
         </div>
-        </div>
 
         <div class="clearfix margin_top5"></div>
 
         <div class="container">
-        <div class="two_third">
             <h2><strong>Will peers have access to posts they don’t have permission to see?</strong></h2>
             <p>Currently peers will have access to public and mutual friend posts. Public posts do have privacy permission issues, but mutual friend posts may have some complications. In the case that a post by a mutual friend has been set to be visible only to the original receiver of the post, a peer will still be sent that post because the app does not address privacy settings.</p>
         </div>
-        <div class="one_third last">
-            <center><img src="images/Olaf_with_Shades.png" style="width:60%;"></center>
-        </div>
-        </div>
 
         <div class="clearfix margin_top5"></div>
 
         <div class="container">
-        <div class="one_third">
-            <center><img src="images/Olaf_with_Shades.png" style="width:60%;"></center>
-        </div>
-        <div class="two_third last">
             <h2><strong>How can people interact with an “offline” Facebook?</strong></h2>
             <p>Many Android phones do not have SIM cards. These phones will never connect to the Facebook server directly.</p>
             <p>When an offline user posts, the post will remain cached on only their phone.</p>
@@ -134,12 +115,10 @@
             <p>The peer will share the post with the Facebook server.</p>
             <p>Then the server will send the post to any phones that need it.</p>
         </div>
-        </div>
 
         <div class="clearfix margin_top5"></div>
 
         <div class="container">
-        <div class="two_third">
             <h2><strong>How can people interact with an “offline” Facebook?</strong></h2>
             <p>Many Android phones do not have SIM cards. These phones will never connect to the Facebook server directly.</p>
             <p>When an offline user posts, the post will remain cached on only their phone.</p>
@@ -147,27 +126,17 @@
             <p>The peer will share the post with the Facebook server.</p>
             <p>Then the server will send the post to any phones that need it.</p>
         </div>
-        <div class="one_third last">
-            <center><img src="images/Olaf_with_Shades.png" style="width:60%;"></center>
-        </div>
-        </div>
 
         <div class="clearfix margin_top5"></div>
 
         <div class="container">
-        <div class="one_third">
-            <center><img src="images/Olaf_with_Shades.png" style="width:60%;"></center>
-        </div>
-        <div class="two_third last">
             <h2><strong>What changes to the FB API and Android will assist the sharing of news feed data?</strong></h2>
             <p>Each peer needs to know what they can share with who. The Facebook API could include privacy settings of each post. For example, if a post on someone’s newsfeed is available to friends A, B, and C, that phone would share the post with peers who identify themselves as A, B, and C.</p>
         </div>
-        </div>
 
         <div class="clearfix margin_top5"></div>
 
         <div class="container">
-        <div class="two_third">
             <h2><strong>How will sharing news feed posts between phones offline influence news feed ranking and overall quality?</strong></h2><p>The overall quality of the news feed will be extremely hard to control for an offline version of Facebook because the phone will be accepting all posts from peers it is allowed to view including public posts. Implementing a client-side news feed ranking system could help.</p>
             <p>A client-side news feed ranking system would need to be implemented in order to rank news feed items in an order other than the updated timestamp of the post. Factors to consider in a client-side news feed ranking system include: </p>
             <ul>
@@ -175,29 +144,19 @@
                 <li>Prioritizing posts located nearby</li>
             </ul>
         </div>
-        <div class="one_third last">
-            <center><img src="images/Olaf_with_Shades.png" style="width:60%;"></center>
-        </div>
-        </div>
 
         <div class="clearfix margin_top5"></div>
 
         <div class="container">
-        <div class="one_third">
-            <center><img src="images/Olaf_with_Shades.png" style="width:60%;"></center>
-        </div>
-        <div class="two_third last">
             <h2><strong>What if we deploy a buggy or vulnerable app for the offline users?</strong></h2>
             <p>If someone uses the Facebook app on a phone that never connects to the internet it’s possible that they would not update their app for an extended period of time. If this version of the app is insecure or buggy, Facebook would want a way to terminate or patch the app.</p>
             <p>Facebook could potentially patch the app via a peer to peer connection. If the peer the phone connects to has a later version of the app, it could provide an APK or a code patch to a phone with an older version.</p>
             <p>Alternatively, the app could contain a failsafe switch that could deactivate Facebook on the vulnerable phone until the app updates. A peer could activate another peer’s failsafe switch, or the failsafe could activate automatically after a certain amount of time.</p>
         </div>
-        </div>
 
         <div class="clearfix margin_top5"></div>
 
         <div class="container">
-        <div class="two_third">
             <h2><strong>What caching systems could improve the performance of this app?</strong></h2>
             <p>The caching algorithm could change based on whether or not the phone is charging, how much space it has available, and what type of network connection it has.</p>
             <p>Facebook could design a caching algorithm to cache content that is likely to be shared with peers down the road. Over time, the app could learn which peers it is most likely to connect to, and could adapt its cache to increase the hit rate.</p>
@@ -206,18 +165,10 @@
             <p>Should we allow caching of items that a user is not able to view, but that they could transmit to peers? </p>
             <p>The server could potentially give a client items that it doesn’t have permission to view, but encrypt them so the client who holds them doesn’t have access to them, but instead only has access to IDs. If a peer then asks our client for those IDs, that peer could download them via a P2P connection, and decrypt the items that it has access to via a key it gets from Facebook servers.</p>
         </div>
-        <div class="one_third last">
-            <center><img src="images/Olaf_with_Shades.png" style="width:60%;"></center>
-        </div>
-        </div>
 
         <div class="clearfix margin_top5"></div>
 
         <div class="container">
-        <div class="one_third">
-            <center><img src="images/Olaf_with_Shades.png" style="width:60%;"></center>
-        </div>
-        <div class="two_third last">
             <h2><strong>How will this app impact my phone’s battery?</strong></h2>
             <p>“The three most important considerations for mobile applications are, in order: battery life, battery life, and battery life.” — A Google Engineer</p>
 
@@ -240,12 +191,10 @@
             <p>http://cs.gmu.edu/~astavrou/research/Android_Power_Measurements_Analysis_SERE_12.pdf
              - theory on wifi -consumption calculation based on activity. also average measurements</p>
         </div>
-        </div>
 
         <div class="clearfix margin_top5"></div>
 
         <div class="container">
-        <div class="two_third">
             <h2><strong>Will the app consume more disk space and memory due to peer caching?</strong></h2>
             <p>Yes. If we are caching data for other peers, as well as ourselves, the app would use more disk space and memory, however we could cap the cache size depending on the available space on the phone on which it is installed. That would insure that app would never consume too many resources.</p>
 
@@ -253,18 +202,10 @@
 
             Disk space and memory will probably not our main concern in the future. They are rapidly getting cheaper.</p>
         </div>
-        <div class="one_third last">
-            <center><img src="images/Olaf_with_Shades.png" style="width:60%;"></center>
-        </div>
-        </div>
 
         <div class="clearfix margin_top5"></div>
 
         <div class="container">
-        <div class="one_third">
-            <center><img src="images/Olaf_with_Shades.png" style="width:60%;"></center>
-        </div>
-        <div class="two_third last">
             <h2><strong>How transparent is the data sharing? How is it controlled by the user?</strong></h2>
             <p>The user controls their data consumption by selecting one of the data usage modes, which determines what kind of posts they view in their news feed (see the product explanation page). The user also controls whether or not they accept a connection with a peer the first time they connect.</p>
 
@@ -272,18 +213,12 @@
 
             <p>The user doesn’t see the news feed data they share with others, precisely how much data they download from Facebook and/or their peers, and how their friend list is shared with their peers.</p>
         </div>
-        </div>
 
         <div class="clearfix margin_top5"></div>
 
         <div class="container">
-        <div class="two_third">
             <h2><strong>Beyond Facebook, how can this idea influence data sharing for other apps or for Android phones in general?</strong></h2>
             <p>The concept of sharing data over a P2P connection can be extended to almost any app that involves downloading overlapping content from a server. This app provides a skeleton for multi-peer data sharing. With the benefits of a lower data requirement, other apps gain the potential to target consumers with low data plans and increase their audience pool.</p>
-        </div>
-        <div class="one_third last">
-            <center><img src="images/Olaf_with_Shades.png" style="width:60%;"></center>
-        </div>
         </div>
 
 
