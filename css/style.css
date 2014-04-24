@@ -2481,6 +2481,9 @@ ul.fun_facts {
 	width: 100%;
 	text-align: center;
 	padding: 70px 0px 40px 0px;
+	background-color: #f3f3f3;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
 }
 .features_sec43 ul {
 	float: left;
