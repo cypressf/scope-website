@@ -680,10 +680,10 @@ h3.ipages_title1.two {
 	display: block;
 }
 .features_sec7 .cont {
-	float: right;
+	float: left;
 	width: 50%;
 	color: #fff;
-	margin-top: 40px;
+	margin: 40px 25% 0;
 	text-align: center;
 }
 
