@@ -914,6 +914,21 @@ h3.ipages_title1.two {
 .features_sec11 .hblog img {
 	width: 100%;
 }
+.features_sec11 .hblog .america {
+	text-align: center;
+}
+.features_sec11 .hblog .america img{
+	max-height: 110px;
+	padding: 20px 0 5px;
+	width: auto;
+}
+.features_sec11 .hblog .india {
+	text-align: center;
+}
+.features_sec11 .hblog .india img {
+	max-height: 150px;
+	width: auto;
+}
 .features_sec11 .hblog .content2 {
 	float: left;
 	width: 84%;
@@ -962,6 +977,15 @@ h3.ipages_title1.two {
 	-moz-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
 	box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.features_sec11 .hblog .network-type {
+	background-color: #3fc35f;
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 7px 0;
+	text-align: center;
+	width: 100%;
 }
 
 /* features section 12 */
@@ -1255,28 +1279,16 @@ ul.fun_facts {
 	width: 100%;
 	text-align: center;
 	padding: 70px 0px 70px 0px;
-	background: url("../images/parallax-bg7.png");
-	background-attachment: fixed;
-	background-repeat:no-repeat;
-	background-position: center;
 	position:relative;
 	background-color: #f3f3f3;
 	min-height: 500px;
 }
 .features_sec19.two {
-	background: url("../images/parallax-bg14.jpg");
-	background-attachment: fixed;
-	background-repeat:no-repeat;
-	background-position: center;
 	position:relative;
 	background-color: #f3f3f3;
 	min-height: 500px;
 }
 .features_sec19.three {
-	background: url("../images/parallax-bg16.jpg");
-	background-attachment: fixed;
-	background-repeat:no-repeat;
-	background-position: center;
 	position:relative;
 	background-color: #f3f3f3;
 	min-height: 500px;
