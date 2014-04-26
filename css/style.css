@@ -902,14 +902,21 @@ h3.ipages_title1.two {
 	width: 100%;
 	text-align: center;
 	padding: 70px 0px;
-	background: url(../images/parallax-bg5.jpg) repeat-y left top;
+	background: url(../images/parallax-bg7.png) repeat-y left top;
+	background-size: 100% auto;
 }
 .features_sec11 .hblog {
 	float: left;
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	background-color: #fff;
 	border-bottom: 4px solid #fff;
+}
+.features_sec11 h1{
+	margin: 0px;
+}
+.features_sec11 h2{
+	margin-bottom: 0px;
 }
 .features_sec11 .hblog img {
 	width: 100%;
@@ -922,17 +929,29 @@ h3.ipages_title1.two {
 	padding: 20px 0 5px;
 	width: auto;
 }
+.features_sec11 .hblog .animal {
+	text-align: center;
+}
+.features_sec11 .hblog .animal img{
+	max-height: 80px;
+	padding: 5px 0;
+	width: auto;
+}
 .features_sec11 .hblog .india {
 	text-align: center;
 }
 .features_sec11 .hblog .india img {
 	max-height: 150px;
+	padding: 5px 0;
 	width: auto;
 }
 .features_sec11 .hblog .content2 {
 	float: left;
 	width: 84%;
 	padding: 5% 8% 8% 8%;
+}
+.features_sec11 .hblog .content2 .divider_dashed9{
+	margin: 15px 0;
 }
 .features_sec11 .hblog h5 {
 	margin-bottom: 4px;
