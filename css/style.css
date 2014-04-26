@@ -663,30 +663,12 @@ h3.ipages_title1.two {
 
 /* features section 7 */
 .features_sec7 {
+	background-color: #272727;
 	float: left;
 	width: 100%;
 	text-align: center;
-	padding: 70px 0px 70px 0px;
-	background: url("../images/parallax-bg3.jpg");
-	background-attachment: fixed;
-	background-origin: initial;
-	background-clip: initial;
-	background-size: cover;
-	background-repeat:no-repeat;
-	background-position:100% 0; 
+	padding: 20px 0px 70px 0px;
 	position:relative;
-	min-height: 360px;
-}
-.features_sec7.two {
-	background: url("../images/parallax-bg15.jpg");
-	background-attachment: fixed;
-	background-origin: initial;
-	background-clip: initial;
-	background-size: cover;
-	background-repeat:no-repeat;
-	background-position:100% 0; 
-	position:relative;
-	min-height: 360px;
 }
 .features_sec7 h1 {
 	color: #fff;
@@ -702,7 +684,7 @@ h3.ipages_title1.two {
 	width: 50%;
 	color: #fff;
 	margin-top: 40px;
-	text-align: left;
+	text-align: center;
 }
 
 /* features section 8 */
@@ -768,7 +750,13 @@ h3.ipages_title1.two {
 .features_sec8 .right.active h3{
 	color: #fc4242;
 }
+.features_sec8 .graph {
 
+}
+.features_sec8 .graph img {
+	padding: 10px 5%;
+	width: 90%;
+}
 /* features section 9 */
 .features_sec9 {
 	float: left;
@@ -902,8 +890,9 @@ h3.ipages_title1.two {
 	width: 100%;
 	text-align: center;
 	padding: 70px 0px;
-	background: url(../images/parallax-bg7.png) repeat-y left top;
-	background-size: 100% auto;
+	background-color: #f3f3f3;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
 }
 .features_sec11 .hblog {
 	float: left;
@@ -912,10 +901,10 @@ h3.ipages_title1.two {
 	background-color: #fff;
 	border-bottom: 4px solid #fff;
 }
-.features_sec11 h1{
+.features_sec11 .hblog h1{
 	margin: 0px;
 }
-.features_sec11 h2{
+.features_sec11 .hblog h2{
 	margin-bottom: 0px;
 }
 .features_sec11 .hblog img {
@@ -3200,7 +3189,7 @@ ul.fsocials {
 }
 
 .readmore_but2 {
-	float: left;
+	float: center;
 	color: #fff;
 	text-transform: uppercase;
 	padding: 13px 40px;
