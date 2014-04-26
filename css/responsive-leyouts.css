@@ -8,6 +8,7 @@
 }
 
 .features_sec7 .cont {
+	margin: 40px 17% 0;
 	width: 65%;
 }
 
@@ -242,6 +243,7 @@ h1.section_title_drakgray {
 }
 
 .features_sec7 .cont {
+	margin: 40px 5% 0;
 	width: 90%;
 }
 
@@ -695,6 +697,7 @@ ul.post_meta_links_small {
 }
 
 .features_sec7 .cont {
+	margin: 40px 5% 0;
 	width: 90%;
 }
 
@@ -1535,8 +1538,8 @@ ul.adsbanner-list {
 }
 
 .features_sec7 .cont {
+	margin: 40px 3% 0;
 	width: 94%;
-	margin-top: 0px;
 }
 
 .features_sec8 .vline {

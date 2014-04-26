@@ -663,30 +663,12 @@ h3.ipages_title1.two {
 
 /* features section 7 */
 .features_sec7 {
+	background-color: #272727;
 	float: left;
 	width: 100%;
 	text-align: center;
-	padding: 70px 0px 70px 0px;
-	background: url("../images/parallax-bg3.jpg");
-	background-attachment: fixed;
-	background-origin: initial;
-	background-clip: initial;
-	background-size: cover;
-	background-repeat:no-repeat;
-	background-position:100% 0; 
+	padding: 20px 0px 70px 0px;
 	position:relative;
-	min-height: 360px;
-}
-.features_sec7.two {
-	background: url("../images/parallax-bg15.jpg");
-	background-attachment: fixed;
-	background-origin: initial;
-	background-clip: initial;
-	background-size: cover;
-	background-repeat:no-repeat;
-	background-position:100% 0; 
-	position:relative;
-	min-height: 360px;
 }
 .features_sec7 h1 {
 	color: #fff;
@@ -698,11 +680,11 @@ h3.ipages_title1.two {
 	display: block;
 }
 .features_sec7 .cont {
-	float: right;
+	float: left;
 	width: 50%;
 	color: #fff;
-	margin-top: 40px;
-	text-align: left;
+	margin: 40px 25% 0;
+	text-align: center;
 }
 
 /* features section 8 */
@@ -768,7 +750,13 @@ h3.ipages_title1.two {
 .features_sec8 .right.active h3{
 	color: #fc4242;
 }
+.features_sec8 .graph {
 
+}
+.features_sec8 .graph img {
+	padding: 10px 5%;
+	width: 90%;
+}
 /* features section 9 */
 .features_sec9 {
 	float: left;
@@ -902,14 +890,22 @@ h3.ipages_title1.two {
 	width: 100%;
 	text-align: center;
 	padding: 70px 0px;
-	background: url(../images/parallax-bg5.jpg) repeat-y left top;
+	background-color: #f3f3f3;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
 }
 .features_sec11 .hblog {
 	float: left;
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	background-color: #fff;
 	border-bottom: 4px solid #fff;
+}
+.features_sec11 .hblog h1{
+	margin: 0px;
+}
+.features_sec11 .hblog h2{
+	margin-bottom: 0px;
 }
 .features_sec11 .hblog img {
 	width: 100%;
@@ -922,17 +918,29 @@ h3.ipages_title1.two {
 	padding: 20px 0 5px;
 	width: auto;
 }
+.features_sec11 .hblog .animal {
+	text-align: center;
+}
+.features_sec11 .hblog .animal img{
+	max-height: 80px;
+	padding: 5px 0;
+	width: auto;
+}
 .features_sec11 .hblog .india {
 	text-align: center;
 }
 .features_sec11 .hblog .india img {
 	max-height: 150px;
+	padding: 5px 0;
 	width: auto;
 }
 .features_sec11 .hblog .content2 {
 	float: left;
 	width: 84%;
 	padding: 5% 8% 8% 8%;
+}
+.features_sec11 .hblog .content2 .divider_dashed9{
+	margin: 15px 0;
 }
 .features_sec11 .hblog h5 {
 	margin-bottom: 4px;
@@ -3181,7 +3189,7 @@ ul.fsocials {
 }
 
 .readmore_but2 {
-	float: left;
+	float: center;
 	color: #fff;
 	text-transform: uppercase;
 	padding: 13px 40px;
