@@ -44,7 +44,9 @@
 }
 
 
-
+.features_questions h3 a {
+	color: #3fc35f;
+}
 .features_sec1 i {
 	border:1px solid #3fc35f;
 	background-color: #3fc35f;

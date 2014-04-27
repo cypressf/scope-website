@@ -98,6 +98,17 @@
 .features_questions li.text h2 {
 	font-weight: bold;
 }
+.features_questions .wifi-direct-img {
+	margin: 10px 0;
+	text-align: center;
+}
+.features_questions .wifi-direct-img img {
+	max-width: 350px;
+	width: 80%;
+}
+.features_questions ol {
+	margin-left: 20px;
+}
 
 /*------------------*/
 /*	SITE STRUCTURE
@@ -2003,6 +2014,9 @@ ul.fun_facts {
 	float: left;
 	width: 100%;
 	padding: 70px 0px 70px 0px;
+	background-color: #f3f3f3;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
 }
 .features_sec31 ul {
 	float: left;
@@ -2013,7 +2027,7 @@ ul.fun_facts {
 .features_sec31 li {
 	padding: 8px 0px;
 	margin: 0px;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #e0e0e0;
 }
 
 /* features section 32 */
