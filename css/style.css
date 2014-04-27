@@ -1304,18 +1304,20 @@ ul.fun_facts {
 .features_sec19 .left {
 	float: left;
 	width: 33.33%;
-	margin-top: 50px;
+	margin-top: 10px;
 }
 .features_sec19 .center {
 	float: left;
 	width: 33.33%;
-	min-height: 560px;
-	background: url(../images/site-img16.png) no-repeat center top;
+	min-height: 480px;
+	background: url(../images/phone_screenshot.png) no-repeat center top;
+	background-size: 100%;
+	background-position: center;
 }
 .features_sec19 .right {
 	float: left;
 	width: 33.33%;
-	margin-top: 50px;
+	margin-top: 10px;
 }
 
 .features_sec19 .left ul {
@@ -1391,10 +1393,21 @@ ul.fun_facts {
 	text-align: left;
 }
 
-.features_sec19 .left ul:hover i,
-.features_sec19 .right ul:hover i{
-	color: #fff;
-	background-color: #fc4242;
+.features_sec19 .left .blue-posts i,
+.features_sec19 .right .blue-posts i{
+	background-color: #2f92ee;
+}
+.features_sec19 .left .green-posts i,
+.features_sec19 .right .green-posts i{
+	background-color: #3fc35f;
+}
+.features_sec19 .left .yellow-posts i,
+.features_sec19 .right .yellow-posts i{
+	background-color: #f2d438;
+}
+.features_sec19 .left .menu i,
+.features_sec19 .right .menu i{
+	background-color: #970001;
 }
 
 /* features section 20 */
