@@ -17,6 +17,63 @@
 /*------------------*/
 /*	SARAH'S ADDITIONS
 /*------------------------------------------------------*/
+.content-menu {
+	padding: 0 15%;
+	width: 70%;
+}
+.data-modes li.icon {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-right: 15px;
+}
+.data-modes li.icon i {
+	color: #ffffff;
+	font-size: 24px;
+	width: 60px;
+	height: 60px;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 60px;
+	border-radius: 100%;
+}
+.data-modes li.icon i:hover {
+	background: transparent;
+}
+.data-modes li.text {
+	float: left;
+	width: 79%;
+}
+.data-modes .blue-posts i{
+	background-color: #2f92ee;
+}
+.data-modes .blue-posts i:hover{
+	color: #2f92ee;
+	border:1px solid #2f92ee;
+}
+.data-modes .green-posts i{
+	background-color: #3fc35f;
+}
+.data-modes .green-posts i:hover{
+	color: #3fc35f;
+	border:1px solid #3fc35f;
+} 
+.data-modes .yellow-posts i{
+	background-color: #f2d438;
+}
+.data-modes .yellow-posts i:hover{
+	color: #f2d438;
+	border:1px solid #f2d438;
+}
+.data-modes .menu i{
+	background-color: #970001;
+}
+.data-modes .menu i:hover{
+	color: #970001;
+	border:1px solid #970001;
+}
 .features_questions ul {
 	float: left;
 	width: 100%;
@@ -40,40 +97,6 @@
 }
 .features_questions li.text h2 {
 	font-weight: bold;
-}
-.data-modes li.icon {
-	float: left;
-	width: 60px;
-	height: 60px;
-	margin-right: 15px;
-}
-.data-modes li.icon i {
-	color: #272727;
-	font-size: 24px;
-	width: 60px;
-	height: 60px;
-	padding: 0px;
-	margin: 0px;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 60px;
-	border-radius: 100%;
-}
-.data-modes li.text {
-	float: left;
-	width: 79%;
-}
-.data-modes .blue-posts i{
-	background-color: #2f92ee;
-}
-.data-modes .green-posts i{
-	background-color: #3fc35f;
-}
-.data-modes .yellow-posts i{
-	background-color: #f2d438;
-}
-.data-modes .menu i{
-	background-color: #970001;
 }
 
 /*------------------*/
@@ -1382,7 +1405,7 @@ ul.fun_facts {
 }
 .features_sec19 .left li.icon i,
 .features_sec19 .right li.icon i{
-	color: #272727;
+	color: #ffffff;
 	font-size: 35px;
 	width: 98px;
 	height: 98px;
