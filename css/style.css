@@ -21,6 +21,9 @@
 	padding: 0 15%;
 	width: 70%;
 }
+.data-modes .ipages_title1 {
+	margin-left: 18.350%;
+}
 .data-modes li.icon {
 	float: left;
 	width: 60px;
@@ -109,6 +112,28 @@
 .features_questions ol {
 	margin-left: 20px;
 }
+.header-demo {
+	float: left;
+	height: 150px;
+	margin-bottom: 20px;
+	position: relative;
+	width: 100%;
+}
+.header-demo .phone {
+	float: left;
+	position: relative;
+}
+.header-demo .phone img {
+	height: 400px; 
+	margin: 5px;
+	width: auto;
+}
+.header-demo .title {
+	float: left;
+	font-weight: bold;
+	padding: 50px 0;
+	position: relative;
+}
 
 /*------------------*/
 /*	SITE STRUCTURE
@@ -156,7 +181,7 @@
 
 
 /* columns */
-.one_half, .one_third, .one_fourth, .two_third, .three_fourth, .one_fifth {
+.one_half, .one_third, .one_fourth, .two_third, .three_fourth, .one_fifth, .one_sixth{
 	position: relative;
 	margin-right: 4%;
 	float: left;
@@ -175,6 +200,9 @@
 }
 .one_fifth {
 	width: 16.800%;
+}
+.one_sixth {
+	width: 14.350%;
 }
 .two_third {
 	width: 65.350%;
