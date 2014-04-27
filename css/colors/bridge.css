@@ -184,6 +184,9 @@
 .features_sec11 .hblog.active {
 	border-bottom: 4px solid #a5d549;
 }
+.features_sec11 .hblog .network-type {
+	background-color: #a5d549;
+}
 
 .features_sec12 .center .topcont {
 	background-color: #a5d549;
