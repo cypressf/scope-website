@@ -754,6 +754,7 @@ h3.ipages_title1.two {
 
 }
 .features_sec8 .graph img {
+	max-width: 950px;
 	padding: 10px 5%;
 	width: 90%;
 }
