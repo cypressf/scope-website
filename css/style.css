@@ -121,18 +121,22 @@
 }
 .header-demo .phone {
 	float: left;
+	margin-right: 7%;
 	position: relative;
+	width: 20%;
 }
 .header-demo .phone img {
-	height: 400px; 
+	height: auto; 
 	margin: 5px;
-	width: auto;
+	min-width: 100px;
+	width: 100%;
 }
 .header-demo .title {
 	float: left;
 	font-weight: bold;
 	padding: 50px 0;
 	position: relative;
+	width: 73%;
 }
 
 /*------------------*/
