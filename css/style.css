@@ -145,6 +145,14 @@
 
 
 /* columns */
+
+.center_one_third{
+	position: relative;
+	margin-right: 4%;
+	margin: 0px auto;
+	width: 30.650%;
+}
+
 .one_half, .one_third, .one_fourth, .two_third, .three_fourth, .one_fifth {
 	position: relative;
 	margin-right: 4%;
