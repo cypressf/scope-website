@@ -1578,10 +1578,11 @@ ul.fun_facts {
 	color: #fff;
 	background: url(../images/site-img19-2.png) no-repeat left top;
 }
-.features_sec21 .box, p {
+.features_sec21 .box p {
 	font-size: 20px;
 	line-height: 22px;
 }
+
 .features_sec21 .custom-icon {
 	height: auto;
 	margin: 10px;
