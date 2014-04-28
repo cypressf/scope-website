@@ -1,5 +1,6 @@
 #trueHeader #logo{
-	background:url(../../images/colors/orange/logo.png) no-repeat;
+	background:url(../../images/p2feed_initial_logo.png) no-repeat;
+	background-size: auto 42px;
 }
 
 .tp-caption.bigtext strong {
