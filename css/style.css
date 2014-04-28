@@ -1578,10 +1578,6 @@ ul.fun_facts {
 	color: #fff;
 	background: url(../images/site-img19-2.png) no-repeat left top;
 }
-.features_sec21 .box, p {
-	font-size: 20px;
-	line-height: 22px;
-}
 .features_sec21 .custom-icon {
 	height: auto;
 	margin: 10px;
@@ -2047,7 +2043,7 @@ ul.fun_facts {
 	text-align: center;
 	padding: 70px 0px 70px 0px;
 	position:relative;
-	background: url("../images/busy_indian_street_l3.jpg");
+	background: url("../images/busy_indian_street_l4.jpg");
   background-origin: border-box;
   background-clip: initial;
   background-size: cover;
