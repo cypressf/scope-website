@@ -1578,6 +1578,19 @@ ul.fun_facts {
 	color: #fff;
 	background: url(../images/site-img19-2.png) no-repeat left top;
 }
+.features_sec21 .box, p {
+	font-size: 20px;
+	line-height: 22px;
+}
+.features_sec21 .custom-icon {
+	height: auto;
+	margin: 10px;
+	width: 90px;
+}
+.features_sec21 .custom-icon img{
+	height: auto;
+	width: 100%;
+}
 
 /* features section 22 */
 .features_sec22 {
@@ -2034,13 +2047,17 @@ ul.fun_facts {
 	text-align: center;
 	padding: 70px 0px 70px 0px;
 	position:relative;
-	background-color: #f3f3f3;
-	border-top: 1px solid #e0e0e0;
-	border-bottom: 1px solid #e0e0e0;
+	background: url("../images/busy_indian_street_l3.jpg");
+  background-origin: border-box;
+  background-clip: initial;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:100% 0;
+  background-position: center bottom;
 }
 .features_sec30 .hvideo iframe {
 	width: 90%;
-	height: 420px;
+	height: 470px;
 }
 
 /* features section 31 */
