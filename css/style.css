@@ -2039,8 +2039,8 @@ ul.fun_facts {
 	border-bottom: 1px solid #e0e0e0;
 }
 .features_sec30 .hvideo iframe {
-	width: 80%;
-	height: 460px;
+	width: 90%;
+	height: 420px;
 }
 
 /* features section 31 */
@@ -2428,13 +2428,17 @@ ul.fun_facts {
 }
 .features_sec39 .rightsection li.text {
 	float: left;
-	width: 79%;
+	width: 60%;
 }
 .features_sec39 .rightsection ul:hover i {
 	background-color: #fc4242;
 }
 .features_sec39 .rightsection ul.active i {
 	background-color: #fc4242;
+}
+.features_sec39 .hvideo iframe {
+	width: 90%;
+	height: 420px;
 }
 
 /* features section 40 */
