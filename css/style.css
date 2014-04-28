@@ -21,6 +21,9 @@
 	padding: 0 15%;
 	width: 70%;
 }
+.data-modes .ipages_title1 {
+	margin-left: 18.350%;
+}
 .data-modes li.icon {
 	float: left;
 	width: 60px;
@@ -98,6 +101,42 @@
 .features_questions li.text h2 {
 	font-weight: bold;
 }
+.features_questions .wifi-direct-img {
+	margin: 10px 0;
+	text-align: center;
+}
+.features_questions .wifi-direct-img img {
+	max-width: 350px;
+	width: 80%;
+}
+.features_questions ol {
+	margin-left: 20px;
+}
+.header-demo {
+	float: left;
+	height: 150px;
+	margin-bottom: 20px;
+	position: relative;
+	width: 100%;
+}
+.header-demo .phone {
+	float: left;
+	position: relative;
+	width: 20%;
+}
+.header-demo .phone img {
+	height: auto; 
+	margin: 5px;
+	min-width: 100px;
+	width: 100%;
+}
+.header-demo .title {
+	float: left;
+	font-weight: bold;
+	padding: 50px 0;
+	position: relative;
+	width: 80%;
+}
 
 /*------------------*/
 /*	SITE STRUCTURE
@@ -146,14 +185,8 @@
 
 /* columns */
 
-.center_one_third{
-	position: relative;
-	margin-right: 4%;
-	margin: 0px auto;
-	width: 30.650%;
-}
+.one_half, .one_third, .one_fourth, .two_third, .three_fourth, .one_fifth, .one_sixth{
 
-.one_half, .one_third, .one_fourth, .two_third, .three_fourth, .one_fifth {
 	position: relative;
 	margin-right: 4%;
 	float: left;
@@ -173,11 +206,20 @@
 .one_fifth {
 	width: 16.800%;
 }
+.one_sixth {
+	width: 14.350%;
+}
 .two_third {
 	width: 65.350%;
 }
 .three_fourth {
 	width: 74%;
+}
+.five_sixth {
+	float: left;
+	margin-left: 1.65%;
+	position: relative;
+	width: 78%
 }
 
 .last {
@@ -1991,15 +2033,10 @@ ul.fun_facts {
 	width: 100%;
 	text-align: center;
 	padding: 70px 0px 70px 0px;
-	background: url("../images/parallax-bg9.jpg");
-	background-attachment: fixed;
-	background-origin: initial;
-	background-clip: initial;
-	background-size: cover;
-	background-repeat:no-repeat;
-	background-position:100% 0;
-	background-position: center;
 	position:relative;
+	background-color: #f3f3f3;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
 }
 .features_sec30 .hvideo iframe {
 	width: 80%;
@@ -2011,6 +2048,9 @@ ul.fun_facts {
 	float: left;
 	width: 100%;
 	padding: 70px 0px 70px 0px;
+	background-color: #f3f3f3;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
 }
 .features_sec31 ul {
 	float: left;
@@ -2021,7 +2061,7 @@ ul.fun_facts {
 .features_sec31 li {
 	padding: 8px 0px;
 	margin: 0px;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #e0e0e0;
 }
 
 /* features section 32 */

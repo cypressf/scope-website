@@ -43,8 +43,12 @@
 	border:2px solid #fa3aab;
 }
 
-
-
+.header-demo {
+	background-color: #fa3aab;
+}
+.features_questions h3 a {
+	color: #fa3aab;
+}
 .features_sec1 i {
 	border:1px solid #fa3aab;
 	background-color: #fa3aab;
