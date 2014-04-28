@@ -121,7 +121,6 @@
 }
 .header-demo .phone {
 	float: left;
-	margin-right: 7%;
 	position: relative;
 	width: 20%;
 }
@@ -136,7 +135,7 @@
 	font-weight: bold;
 	padding: 50px 0;
 	position: relative;
-	width: 73%;
+	width: 80%;
 }
 
 /*------------------*/
@@ -213,6 +212,12 @@
 }
 .three_fourth {
 	width: 74%;
+}
+.five_sixth {
+	float: left;
+	margin-left: 1.65%;
+	position: relative;
+	width: 78%
 }
 
 .last {
