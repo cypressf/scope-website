@@ -2031,15 +2031,10 @@ ul.fun_facts {
 	width: 100%;
 	text-align: center;
 	padding: 70px 0px 70px 0px;
-	background: url("../images/parallax-bg9.jpg");
-	background-attachment: fixed;
-	background-origin: initial;
-	background-clip: initial;
-	background-size: cover;
-	background-repeat:no-repeat;
-	background-position:100% 0;
-	background-position: center;
 	position:relative;
+	background-color: #f3f3f3;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
 }
 .features_sec30 .hvideo iframe {
 	width: 80%;
