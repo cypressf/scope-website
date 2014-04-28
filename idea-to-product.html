@@ -159,9 +159,9 @@
                 <li><h2><strong>Is P2P vulnerable to people stealing my data?</strong></h2></li>
             </ul>
       
-            <p>Access to data over the P2P connection in this app is open to anyone with the same app and service name. Posts are shared across P2P based on newsfeed ids and mutual friend ids. In any scenario in which a peer is capable of acquiring overlapping newsfeed ids or friend ids, that peer will have access to any posts that match those ids.</p>
+            <p>Access to data over the P2P connection in this app is open to anyone with the same app and service name. Posts are shared across P2P based on newsfeed ids and mutual friend ids. In any scenario in which a peer is capable of acquiring overlapping newsfeed ids or friend ids, that peer will have access to any posts that match those ids.</p><br>
 
-            <p>This app relies on Facebook authentication to prevent users from accessing newsfeed ids and friend ids that do not belong to them. However, on a rooted phone, users have access to both the database and the shared preferences that this app uses to cache friend ids. With the capability of modifying this file, rooted users are capable of accessing all the posts visible to other peers from specific Facebook users. A potential solution to this security issue is the implementation of privacy settings on sharing posts. If only a particular set of Facebook users are allowed to see a post, a rooted user will not be able to access that post even if the rooted user has manually modified the friends ids.</p>
+            <p>This app relies on Facebook authentication to prevent users from accessing newsfeed ids and friend ids that do not belong to them. However, on a rooted phone, users have access to both the database and the shared preferences that this app uses to cache friend ids. With the capability of modifying this file, rooted users are capable of accessing all the posts visible to other peers from specific Facebook users. A potential solution to this security issue is the implementation of privacy settings on sharing posts. If only a particular set of Facebook users are allowed to see a post, a rooted user will not be able to access that post even if the rooted user has manually modified the friends ids.</p><br>
 
             <p>In the case of managing who is or is not authorized to connect via P2P, a user can choose who not to share data with. The app uses client’s IP address and MAC address to identify peers. If a user accepts the connection of peer, the WiFi-Direct device remembers that connection and automatically accept future requests from that phone. Again, with a rooted phone, another user can spoof a phone’s MAC Address to match one that has been authorized to connect P2P in order to connect to another phone automatically. A way this can be addressed in the future is using the Facebook user ID of each phone as well to judge whether or not a peer is allowed to connect on another layer of security built into the app.</p>
         
@@ -189,11 +189,11 @@
                 <li class="icon"><a id="q_offline_fb" href = "#questions"><i class="fa fa-group"></i></a></li>
                 <li class="text"><h2><strong>How can people interact with an “offline” Facebook?</strong></h2> </li>
             </ul>
-            <p>Many Android phones do not have SIM cards. These phones will never connect to the Facebook server directly.</p>
-            <p>When an offline user posts, the post will remain cached on only their phone.</p>
-            <p>When an offline user connect to a peer, it will share its post.</p>
-            <p>The peer will share the post with the Facebook server.</p>
-            <p>Then the server will send the post to any phones that need it.</p>
+            <p>Many Android phones do not have SIM cards. These phones will never connect to the Facebook server directly.</p><br>
+            <p>When an offline user posts, the post will remain cached on only their phone.</p><br>
+            <p>When an offline user connect to a peer, it will share its post.</p><br>
+            <p>The peer will share the post with the Facebook server.</p><br>
+            <p>Then the server will send the post to any phones that need it.</p><br>
         
             <div class="clearfix divider_dashed9"></div>
 
@@ -219,12 +219,12 @@
                 <li class="icon"><a id="q_newsfeed_quality" href = "#questions"><i class="fa fa-thumbs-o-up"></i></a></li>
                 <li class="text"><h2><strong>How will sharing news feed posts between phones offline influence news feed ranking and overall quality?</strong></h2> </li>
             </ul>
-            <p>The overall quality of the news feed will be extremely hard to control for an offline version of Facebook because the phone will be accepting all posts from peers it is allowed to view including public posts. Implementing a client-side news feed ranking system could help.</p>
+            <p>The overall quality of the news feed will be extremely hard to control for an offline version of Facebook because the phone will be accepting all posts from peers it is allowed to view including public posts. Implementing a client-side news feed ranking system could help.</p><br>
             <p>A client-side news feed ranking system would need to be implemented in order to rank news feed items in an order other than the updated timestamp of the post. Factors to consider in a client-side news feed ranking system include: </p>
-            <ul>
+            <ol>
                 <li>Prioritizing posts with pictures and videos</li>
                 <li>Prioritizing posts located nearby</li>
-            </ul>
+            </ol>
         
             <div class="clearfix divider_dashed9"></div>
 
@@ -237,8 +237,8 @@
                 <li class="icon"><a id="q_buggy_app" href = "#questions"><i class="fa fa-bug"></i></a></li>
                 <li class="text"><h2><strong>What if we deploy a buggy or vulnerable app for the offline users?</strong></h2> </li>
             </ul>
-            <p>If someone uses the Facebook app on a phone that never connects to the internet it’s possible that they would not update their app for an extended period of time. If this version of the app is insecure or buggy, Facebook would want a way to terminate or patch the app.</p>
-            <p>Facebook could potentially patch the app via a peer to peer connection. If the peer the phone connects to has a later version of the app, it could provide an APK or a code patch to a phone with an older version.</p>
+            <p>If someone uses the Facebook app on a phone that never connects to the internet it’s possible that they would not update their app for an extended period of time. If this version of the app is insecure or buggy, Facebook would want a way to terminate or patch the app.</p><br>
+            <p>Facebook could potentially patch the app via a peer to peer connection. If the peer the phone connects to has a later version of the app, it could provide an APK or a code patch to a phone with an older version.</p><br>
             <p>Alternatively, the app could contain a failsafe switch that could deactivate Facebook on the vulnerable phone until the app updates. A peer could activate another peer’s failsafe switch, or the failsafe could activate automatically after a certain amount of time.</p>
         
             <div class="clearfix divider_dashed9"></div>
@@ -252,11 +252,11 @@
                 <li class="icon"><a id="q_caching" href = "#questions"><i class="fa fa-folder"></i></a></li>
                 <li class="text"><h2><strong>What caching systems could improve the performance of this app?</strong></h2></li>
             </ul>
-            <p>The caching algorithm could change based on whether or not the phone is charging, how much space it has available, and what type of network connection it has.</p>
-            <p>Facebook could design a caching algorithm to cache content that is likely to be shared with peers down the road. Over time, the app could learn which peers it is most likely to connect to, and could adapt its cache to increase the hit rate.</p>
-            <p>The app should cache entire news feed posts, not simply individual photos and videos.</p>
-            <p>Caching individual photos and videos is helpful because they are costly to obtain, but peers that are completely offline will want to see context, such as the news feed post the photo appears in.</p>
-            <p>Should we allow caching of items that a user is not able to view, but that they could transmit to peers? </p>
+            <p>The caching algorithm could change based on whether or not the phone is charging, how much space it has available, and what type of network connection it has.</p><br>
+            <p>Facebook could design a caching algorithm to cache content that is likely to be shared with peers down the road. Over time, the app could learn which peers it is most likely to connect to, and could adapt its cache to increase the hit rate.</p><br>
+            <p>The app should cache entire news feed posts, not simply individual photos and videos.</p><br>
+            <p>Caching individual photos and videos is helpful because they are costly to obtain, but peers that are completely offline will want to see context, such as the news feed post the photo appears in.</p><br>
+            <p>Should we allow caching of items that a user is not able to view, but that they could transmit to peers? </p><br>
             <p>The server could potentially give a client items that it doesn’t have permission to view, but encrypt them so the client who holds them doesn’t have access to them, but instead only has access to IDs. If a peer then asks our client for those IDs, that peer could download them via a P2P connection, and decrypt the items that it has access to via a key it gets from Facebook servers.</p>
         
             <div class="clearfix divider_dashed9"></div>
@@ -270,24 +270,24 @@
                 <li class="icon"><a id="q_battery" href = "#questions"><i class="fa fa-mobile-phone"></i></a></li>
                 <li class="text"><h2><strong>How will this app impact my phone’s battery?</strong></h2></li>
             </ul>
-            <p>“The three most important considerations for mobile applications are, in order: battery life, battery life, and battery life.” — A Google Engineer</p>
+            <p>“The three most important considerations for mobile applications are, in order: battery life, battery life, and battery life.” — A Google Engineer</p><br>
 
-            <p>Because our app relies heavily on WiFi P2P connections, the app spawns a service that is persistent after closing the activity. This service will use the WiFi antenna to find nearby peers and transfer data, which will consume battery life.</p>
+            <p>Because our app relies heavily on WiFi P2P connections, the app spawns a service that is persistent after closing the activity. This service will use the WiFi antenna to find nearby peers and transfer data, which will consume battery life.</p><br>
 
-            <p>We can modify the behavior of the app depending on the current state of the battery. If the phone is charging, we can constantly search for peers and transmit data, for example.</p>
-            <p>http://developer.android.com/training/monitoring-device-state/battery-monitoring.html</p>
+            <p>We can modify the behavior of the app depending on the current state of the battery. If the phone is charging, we can constantly search for peers and transmit data, for example.</p><br>
+            <p>http://developer.android.com/training/monitoring-device-state/battery-monitoring.html</p><br>
 
-            <p>Peer service discovery uses the WiFi antenna, which consumes roughly 200mA.</p>
+            <p>Peer service discovery uses the WiFi antenna, which consumes roughly 200mA.</p><br>
 
-            <p>At that rate, a 2,000 mAh phone battery would die after 10 hrs (not even taking into account the power consumption due to CPU use, or the power consumption due to any other app, or the screen). Compare this to a phone in standby with WiFi idle, which would consume roughly 10mA, and last 20 times as long on a single charge.</p>
+            <p>At that rate, a 2,000 mAh phone battery would die after 10 hrs (not even taking into account the power consumption due to CPU use, or the power consumption due to any other app, or the screen). Compare this to a phone in standby with WiFi idle, which would consume roughly 10mA, and last 20 times as long on a single charge.</p><br>
 
-            <p>https://www.youtube.com/watch?v=OUemfrKe65c</p>
-            <p>http://developer.android.com/training/connect-devices-wirelessly/nsd-wifi-direct.html</p>
+            <p>https://www.youtube.com/watch?v=OUemfrKe65c</p><br>
+            <p>http://developer.android.com/training/connect-devices-wirelessly/nsd-wifi-direct.html</p><br>
 
-            <p>We can minimize the impact on battery life by batching all our requests, so as not to keep the WiFi antenna on. We can wake up all our apps every ten minutes to do a quick peer search, then let the antenna go back to sleep. Assuming all the apps wake up at the same time (based on Android’s clock) we will find new peers to connect to every ten minutes.</p>
+            <p>We can minimize the impact on battery life by batching all our requests, so as not to keep the WiFi antenna on. We can wake up all our apps every ten minutes to do a quick peer search, then let the antenna go back to sleep. Assuming all the apps wake up at the same time (based on Android’s clock) we will find new peers to connect to every ten minutes.</p><br>
 
-            <p>Because P2P speeds are substantially better than a normal LAN connection, the both time and load of WiFi usage that is actively used by the app is lower.</p>
-            <p>https://www.usenix.org/legacy/event/usenix10/tech/full_papers/Carroll.pdf</p>
+            <p>Because P2P speeds are substantially better than a normal LAN connection, the both time and load of WiFi usage that is actively used by the app is lower.</p><br>
+            <p>https://www.usenix.org/legacy/event/usenix10/tech/full_papers/Carroll.pdf</p><br>
             <p>http://cs.gmu.edu/~astavrou/research/Android_Power_Measurements_Analysis_SERE_12.pdf
              - theory on wifi -consumption calculation based on activity. also average measurements</p>
         
@@ -302,11 +302,11 @@
                 <li class="icon"><a id="q_space_memory" href = "#questions"><i class="fa fa-hdd-o"></i></a></li>
                 <li class="text"><h2><strong>Will the app consume more disk space and memory due to peer caching?</strong></h2></li>
             </ul>
-            <p>Yes. If we are caching data for other peers, as well as ourselves, the app would use more disk space and memory, however we could cap the cache size depending on the available space on the phone on which it is installed. That would insure that app would never consume too many resources.</p>
+            <p>Yes. If we are caching data for other peers, as well as ourselves, the app would use more disk space and memory, however we could cap the cache size depending on the available space on the phone on which it is installed. That would insure that app would never consume too many resources.</p><br>
 
             <p>If the cache is limited at a very small size, but the phone is charging and connected to an u
 
-            Disk space and memory will probably not our main concern in the future. They are rapidly getting cheaper.</p>
+            Disk space and memory will probably not our main concern in the future. They are rapidly getting cheaper.</p><br>
         
             <div class="clearfix divider_dashed9"></div>
 
@@ -319,9 +319,9 @@
                 <li class="icon"><a id="q_data_sharing_transparency" href = "#questions"><i class="fa fa-exchange"></i></a></li>
                 <li class="text"><h2><strong>How transparent is the data sharing? How is it controlled by the user?</strong></h2></li>
             </ul>
-            <p>The user controls their data consumption by selecting one of the data usage modes, which determines what kind of posts they view in their news feed (see the product explanation page). The user also controls whether or not they accept a connection with a peer the first time they connect.</p>
+            <p>The user controls their data consumption by selecting one of the data usage modes, which determines what kind of posts they view in their news feed (see the product explanation page). The user also controls whether or not they accept a connection with a peer the first time they connect.</p><br>
 
-            <p>The user sees where each news feed posts comes from by the title of the news feed items and the color of the item.</p>
+            <p>The user sees where each news feed posts comes from by the title of the news feed items and the color of the item.</p><br>
 
             <p>The user doesn’t see the news feed data they share with others, precisely how much data they download from Facebook and/or their peers, and how their friend list is shared with their peers.</p>
         </div>

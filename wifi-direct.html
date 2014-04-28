@@ -150,21 +150,21 @@
                 <li><h2><a id="how-to-use"><strong>How to use it on Android</strong></a></h2></li>
             </ul>
 
-            <h3>First, follow the <a href="http://developer.android.com/training/connect-devices-wirelessly/nsd-wifi-direct.html">developer guide</a> to initiate service discovery</h3>
+            <h3>1. First, follow the <a href="http://developer.android.com/training/connect-devices-wirelessly/nsd-wifi-direct.html">developer guide</a> to initiate service discovery</h3>
 
             <p>Using Wi-Fi P2P for Service Discovery tells you how to advertise a service on your device so other devices can find you. In our demo, our app advertises itself using a unique string that identifies it as a peer-to-peer Facebook app. This allows devices to find each other using the Data Link Layer before they have established a connection.</p><br>
 
-            <h3>There are some service discovery quirks</h3>
+            <h3>2. There are some service discovery quirks</h3>
 
             <p>In order to find each other, both devices must call <a href="http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverServices(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)">WiFiP2pManager.discoverServices</a>, not just one. This method puts the devices in the FIND phase, in which they will both advertise and listen for nearby services. If you do not call <a href="http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverServices(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)">WiFiP2pManager.discoverServices</a>, your device will not advertise itself, and other devices will not be able to find it.</p><br>
 
             <p>The Android specification claims that service discovery continues until the phone finds a device, but it was not very reliable in our tests. Sometimes, devices failed to find each other, but later found each other if we called <a href="http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverServices(android.net.wifi.p2p.WifiP2pManager.Channel, android.net.wifi.p2p.WifiP2pManager.ActionListener)">WiFiP2pManager.discoverServices</a> a second time. </p><br>
 
-            <h3>Next, follow the <a href="http://developer.android.com/guide/topics/connectivity/wifip2p.html">developer guide</a> to connect to peers via WiFi Direct</h3>
+            <h3>3. Next, follow the <a href="http://developer.android.com/guide/topics/connectivity/wifip2p.html">developer guide</a> to connect to peers via WiFi Direct</h3>
 
             <p>Skip the parts about peer discovery. If you’ve followed the previous guide, you’re already using <strong>service discovery</strong> to find peers that are running the specific service you want. Instead, use the code to connect to a peer when you have found the peer via service discovery, in the service discovery listener.</p><br>
 
-            <h3>There are some connection quirks</h3>
+            <h3>4. There are some connection quirks</h3>
 
             <p>If you already have a pending connection with a peer, you cannot attempt to connect to a second peer. If you wish to automatically connect to all the peers you discover, you must add the devices to a queue, and connect to them one at a time.</p><br>
 
@@ -175,7 +175,7 @@
                 <li>connected (peers you are connected to)</li>
             </ol>
 
-            <h3>How can peers talk to each other?</h3>
+            <h3>5. How can peers talk to each other?</h3>
 
             <p>The Group owner is aware of all the peers MAC addresses, and the peers are aware of the group owner’s IP address, but the peers are not aware of each other’s MAC addresses. In addition, the group owner does not have access to the peers’ IP addresses through the Wi-Fi Direct API. Instead, the group owner must find the peers’ IP addresses through some other means.</p>
         
