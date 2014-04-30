@@ -455,6 +455,9 @@ h2.ipages_title1 {
 h2.ipages_title1 strong {
 	font-weight: 300;
 }
+h2.ipages_title1 a{
+	font-weight: 300;
+}
 
 h2.ipages_title1.two {
 	text-align: left;
@@ -2420,19 +2423,18 @@ ul.fun_facts {
 	width: 94%;
 	text-align: left;
 	padding-bottom: 30px;
-	background: url(../images/site-img46.png) no-repeat 34px top;
 }
 .features_sec39 .rightsection ul {
 	float: left;
 	width: 100%;
 	padding: 0px;
-	margin: 50px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 .features_sec39 .rightsection ul.two {
-	margin-top: 65px;
+	margin-top: 25px;
 }
 .features_sec39 .rightsection ul.three {
-	margin-top: 65px;
+	margin-top: 25px;
 }
 .features_sec39 .rightsection li {
 	padding: 0px;
@@ -2462,7 +2464,6 @@ ul.fun_facts {
 }
 .features_sec39 .rightsection li.text {
 	float: left;
-	width: 60%;
 }
 .features_sec39 .rightsection ul:hover i {
 	background-color: #fc4242;
@@ -2474,7 +2475,49 @@ ul.fun_facts {
 	width: 90%;
 	height: 420px;
 }
-
+.features_sec39 .three-g-network {
+	padding-top: 10px;
+	position: relative;
+}
+.features_sec39 .three-g-network .america {
+	float: left;
+	width: 58%;
+}
+.features_sec39 .three-g-network .america img{
+	height: auto;
+	padding: 20px 0 5px;
+	width: 100%;
+}
+.features_sec39 .three-g-network .india {
+	float: left;
+	width: 42%;
+}
+.features_sec39 .three-g-network .india img {
+	height: auto;
+	padding: 5px 0;
+	width: 100%;
+}
+.features_sec39 .three-g-network .content2 {
+	float: left;
+	text-align: left;
+}
+.features_sec39 .three-g-network .date {
+	float: left;
+	width: 100%;
+	font-size: 13px;
+	color: #999;
+}
+.features_sec39 .three-g-network .comments {
+	float: left;
+	width: 100%;
+	font-size: 13px;
+	color: #727272;
+	padding: 5px 0px;
+	margin-top: 10px;
+	margin-bottom: 18px;
+	border-top: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+}
 /* features section 40 */
 .features_sec40 {
 	float: left;

@@ -45,6 +45,9 @@
 }
 
 
+h2.ipages_title1 a:hover{
+	color: #3fc35f;
+}
 .menu_main a.active-page {
 	color: #3fc35f !important;
 }

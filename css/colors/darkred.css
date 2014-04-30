@@ -45,6 +45,9 @@
 }
 
 
+h2.ipages_title1 a:hover{
+	color: #970001;
+}
 .menu_main a.active-page {
 	color: #970001 !important;
 }
@@ -88,6 +91,7 @@
 .features_sec39 .rightsection ul.active i {
 	background-color: #970001;
 }
+
 
 .features_sec3 .boxsec {
 	border-bottom: 4px solid #970001;
