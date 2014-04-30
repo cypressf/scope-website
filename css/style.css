@@ -1396,17 +1396,17 @@ ul.fun_facts {
 	padding: 70px 0px 70px 0px;
 	position:relative;
 	background-color: #f3f3f3;
-	min-height: 500px;
+	min-height: 600px;
 }
 .features_sec19.two {
 	position:relative;
 	background-color: #f3f3f3;
-	min-height: 500px;
+	min-height: 600px;
 }
 .features_sec19.three {
 	position:relative;
 	background-color: #f3f3f3;
-	min-height: 500px;
+	min-height: 600px;
 }
 .features_sec19 .left {
 	float: left;
@@ -1416,9 +1416,9 @@ ul.fun_facts {
 .features_sec19 .center {
 	float: left;
 	width: 33.33%;
-	min-height: 480px;
-	background: url(../images/phone_screenshot.png) no-repeat center top;
-	background-size: 100%;
+	min-height: 600px;
+	background: url(../images/phone_screenshot_with_phone.png) no-repeat center top;
+	background-size: 80%;
 	background-position: center;
 }
 .features_sec19 .right {
