@@ -44,6 +44,10 @@
 	border:2px solid #2f92ee;
 }
 
+
+.offline-img img{
+	border-bottom: 5px solid #2f92ee;
+}
 .header-demo {
 	background-color: #2f92ee;
 }

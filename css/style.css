@@ -2764,7 +2764,7 @@ ul.fun_facts {
 	font-size: 50px;
 	font-weight: 200;
 	padding-bottom: 25px;
-	text-transform: uppercase;
+	text-transform: none;
 	background: url(../images/h-line1.png) no-repeat center bottom;
 }
 
