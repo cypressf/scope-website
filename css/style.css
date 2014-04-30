@@ -2040,8 +2040,9 @@ ul.fun_facts {
 .features_sec30 {
 	float: left;
 	width: 100%;
+	height: 85vh;
 	text-align: center;
-	padding: 40px 0px;
+	padding: 30px 0px 30px;
 	position:relative;
 	background: url("../images/busy_indian_street_l4.jpg");
   background-origin: border-box;
@@ -2051,9 +2052,12 @@ ul.fun_facts {
   background-position:100% 0;
   background-position: center bottom;
 }
+.features_sec30 .hvideo {
+	padding-bottom: 20px;
+}
 .features_sec30 .hvideo iframe {
-	width: 90%;
-	height: 470px;
+	width: 640px;
+	height: 360px;
 }
 
 /* features section 31 */
