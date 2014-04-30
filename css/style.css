@@ -2054,6 +2054,9 @@ ul.fun_facts {
   background-position:100% 0;
   background-position: center bottom;
 }
+.features_sec30 h2 {
+	margin-bottom: 20px;
+}
 .features_sec30 .hvideo {
 	padding-bottom: 20px;
 }
