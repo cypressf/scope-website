@@ -2829,6 +2829,42 @@ ul.fun_facts {
 	padding-top: 70px;
 }
 
+/* features section 47 */
+.features_sec47 {
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 70px 0px 70px 0px;
+	background-color: #f3f3f3;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+.features_sec47 ul {
+	float: left;
+	width: 100%;
+	padding: 0px;
+	margin: 0px 0px 0px 0px;
+}
+.features_sec47 ul.two {
+	margin: 20px 0 0 30px;
+}
+.features_sec47 ul.three {
+	margin: 20px 0 0 30px;
+}
+.features_sec47 ul.four {
+	margin: 20px 0 0 30px;
+}
+.features_sec47 li {
+	padding: 0px;
+	margin: 0px;
+}
+.features_sec47 h3 {
+	margin-bottom: 10px;
+}
+.features_sec47 li.text {
+	float: left;
+}
+
 /* page title */
 .page_title {
 	float: left;
