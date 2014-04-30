@@ -45,6 +45,9 @@
 }
 
 
+.menu_main a.active-page {
+	color: #6b798f !important;
+}
 .offline-img img{
 	border-bottom: 5px solid #6b798f;
 }
