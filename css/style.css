@@ -140,6 +140,11 @@
 	position: relative;
 	width: 80%;
 }
+.strong-statement-section {
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 30px;
+}
 
 /*------------------*/
 /*	SITE STRUCTURE
@@ -804,6 +809,10 @@ h3.ipages_title1.two {
 	text-align: center;
 	padding: 70px 0px;
 }
+.features_sec8 p {
+	padding: 0 50px;
+	text-align: left;
+}
 .features_sec8 .content_box {
 	float: left;
 	width: 100%;
@@ -1004,6 +1013,9 @@ h3.ipages_title1.two {
 	background-color: #f3f3f3;
 	border-top: 1px solid #e0e0e0;
 	border-bottom: 1px solid #e0e0e0;
+}
+.features_sec11 .section_title_drakgray {
+	margin-bottom: 30px;
 }
 .features_sec11 .hblog {
 	float: left;
@@ -1517,7 +1529,7 @@ ul.fun_facts {
 }
 .features_sec19 .left .menu i,
 .features_sec19 .right .menu i{
-	background-color: #970001;
+	background-color: #D00000;
 }
 
 /* features section 20 */
@@ -2053,6 +2065,9 @@ ul.fun_facts {
   background-repeat:no-repeat;
   background-position:100% 0;
   background-position: center bottom;
+}
+.features_sec30 h2 {
+	margin-bottom: 20px;
 }
 .features_sec30 .hvideo {
 	padding-bottom: 20px;
