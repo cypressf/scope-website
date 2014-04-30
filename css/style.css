@@ -2803,6 +2803,31 @@ ul.fun_facts {
 	color: #fc4242;
 	background: url(../images/skillgraph4.png) no-repeat center top;
 }
+/* features section 46 */
+.features_sec46 {
+	background-color: #272727;
+	color: #fff;
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 70px 0px 70px 0px;
+}
+.features_sec46 h2 {
+	color: #fff;
+}
+.features_sec46 .ipages_title1 {
+	color: #fff;
+}
+.features_sec46 .hvideo {
+	padding-bottom: 20px;
+}
+.features_sec46 .hvideo iframe {
+	width: 100%;
+	height: 320px;
+}
+.features_sec46 .rightsection {
+	padding-top: 70px;
+}
 
 /* page title */
 .page_title {
