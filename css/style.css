@@ -145,6 +145,16 @@
 	line-height: 36px;
 	margin-bottom: 30px;
 }
+.strong-statement-section.two {
+	font-size: 20px;
+	line-height: 32px;
+	margin-bottom: 10px;
+}
+.strong-statement-section.three {
+	font-size: 20px;
+	line-height: 32px;
+	margin-bottom: 30px;
+}
 
 /*------------------*/
 /*	SITE STRUCTURE
