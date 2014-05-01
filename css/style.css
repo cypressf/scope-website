@@ -14,6 +14,8 @@
 }
 
 
+
+
 /*------------------*/
 /*	SARAH'S ADDITIONS
 /*------------------------------------------------------*/
@@ -115,6 +117,7 @@
 .features_questions ol {
 	margin-left: 20px;
 }
+
 .header-demo {
 	float: left;
 	height: 150px;
@@ -155,6 +158,40 @@
 	line-height: 32px;
 	margin-bottom: 30px;
 }
+
+
+/*------------------*/
+/*	CYPRESS'S ADDITIONS
+/*------------------------------------------------------*/
+
+.features_wifidirect {
+	float: left;
+	padding: 70px 0px;
+	width: 100%;
+}
+
+.features_wifidirect h2 {
+	text-align: center;
+}
+
+.features_wifidirect p, .features_wifidirect h3, .features_wifidirect ul, .features_wifidirect ol {
+	padding: 0 50px;
+}
+
+.features_wifidirect p {
+	padding-bottom:1em;
+}
+
+.features_dark {
+	background-color: #272727;
+}
+
+.features_dark a:hover {
+	color:#fff;
+}
+
+
+
 
 /*------------------*/
 /*	SITE STRUCTURE
@@ -798,6 +835,9 @@ h3.ipages_title1.two {
 	padding: 20px 0px 70px 0px;
 	position:relative;
 }
+.features_sec7 a:hover {
+	color:#fff;
+}
 .features_sec7 h1 {
 	color: #fff;
 	font-weight: 200;
@@ -1221,6 +1261,10 @@ h3.ipages_title1.two {
 	text-align: center;
 	padding: 70px 0px 0px 0px;
 	background-color: #272727;
+}
+
+.features_sec13 a:hover {
+	color:#fff;
 }
 
 /* features section 14 */
