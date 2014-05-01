@@ -6,10 +6,13 @@ jQuery(document).ready(function() {
 		{
 			delay:9000,
 			startwidth:1170,
-			startheight:400,
-			hideThumbs:10,
+			startheight:310,
+			hideThumbs:200,
 			fullWidth:"on",
-			forceFullWidth:"on"
+			forceFullWidth:"on",
+			navigationArrows:"solo",			
+			navigationType: "bullet",
+                
 		});
 
 });
