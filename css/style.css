@@ -3066,7 +3066,12 @@ ul.fun_facts {
 	color: #fff;
 	margin-bottom: 20px;
 }
-
+.footer1 a {
+	color: #727272;
+}
+.footer1 a:hover {
+	text-decoration: underline;
+}
 .footer1.three {
 	float: left;
 	width: 100%;
