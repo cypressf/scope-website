@@ -1170,6 +1170,16 @@ h3.ipages_title1.two {
 	text-align: center;
 	width: 100%;
 }
+.features_sec11 .sources {
+	color: #727272;
+	float: left;
+	font-size: 11px;
+	margin-top: 10px;
+	width: 100%;
+}
+.features_sec11 .sources a:hover {
+	text-decoration: underline;
+}
 
 /* features section 12 */
 .features_sec12 {
