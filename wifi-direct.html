@@ -39,6 +39,11 @@
     <link href="js/mainmenu/sticky.css" rel="stylesheet">
     <link href="js/mainmenu/bootstrap.css" rel="stylesheet">
     <link href="js/mainmenu/fhmm.css" rel="stylesheet">
+
+    <!-- code theme -->
+    <link href="css/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -284,21 +289,64 @@
         <div class="container">
             <h2 id="bugs" class="section_title_drakgray">Issues to watch out for</h2>
 
-           <h3 class="nocaps">Only use Wi-Fi Direct on Android 4.2 Jelly Bean and above</h3>
-           <p>It is buggy on versions below 4.2. <a href="https://code.google.com/p/android/issues/detail?id=43004">https://code.google.com/p/android/issues/detail?id=43004</a></p>
+            <h3 class="nocaps">Only use Wi-Fi Direct on Android 4.2 Jelly Bean and above</h3>
+            <p>It is buggy on versions below 4.2. <a href="https://code.google.com/p/android/issues/detail?id=43004">https://code.google.com/p/android/issues/detail?id=43004</a></p>
 
-           <h3 class="nocaps">The MAC address of a device reported by service discovery differs from the hardware address of the network interface that is actually used by the connection.</h3>
-           <p>This is intentional, but can be confusing if you are unaware.</p>
-           <p><a href="">https://code.google.com/p/android/issues/detail?id=53437</a></p>
+            <h3 class="nocaps">The MAC address of a device reported by service discovery differs from the hardware address of the network interface that is actually used by the connection.</h3>
+            <p>This is intentional, but can be confusing if you are unaware.</p>
+            <p><a href="">https://code.google.com/p/android/issues/detail?id=53437</a></p>
 
-           <h3 class="nocaps">Wi-Fi Direct is not fully supported on all hardware, even if it running Android 4.4.2 or later.</h3>
-           <p>For example, the Moto G cannot connect to a Wi-Fi Direct group and a standard Wi-Fi AP at the same time.</p>
+            <h3 class="nocaps">Wi-Fi Direct is not fully supported on all hardware, even if it running Android 4.4.2 or later.</h3>
+            <p>For example, the Moto G cannot connect to a Wi-Fi Direct group and a standard Wi-Fi AP at the same time.</p>
 
-           <h3 class="nocaps">In addition, we encountered some problems when running on the Nexus 5 with Android 4.4.2.</h3>
+            <h3 class="nocaps">In addition, we encountered some problems when running on the Nexus 5 with Android 4.4.2.</h3>
 
-           <p>We were unable to find bug reports for any of the following issues we encountered, but they are worth noting. Some of them may be due to bugs in our demo app; some of them may be bugs in the Wi-Fi Direct implementation. We never found fixes for them, so instead we implemented workarounds.</p>
+            <p>We were unable to find bug reports for any of the following issues we encountered, but they are worth noting. Some  of them may be due to bugs in our demo app; some of them may be bugs in the Wi-Fi Direct implementation. We never found fixes for them, so instead we implemented workarounds.</p>
 
-           <p>Sometimes when running our app, service discovery would fail with <a href="http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#NO_SERVICE_REQUESTS">Error code 3 (No Service Requests)</a>.</p>
+            <p>Sometimes when running our app, service discovery would fail with <a href="http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#NO_SERVICE_REQUESTS">Error code 3 (No Service Requests)</a>.
+            This occurred randomly and no pattern was found. The simple solution to this is to stop service discovery and reinitiate it after resetting the service requests. Resetting service requests without cancelling service discovery leads to an infinite loop of Error code 3. You can see an example of this solution below:
+
+            <br />
+            </p>
+            
+            <pre class="brush: java">                
+                if (code == WifiP2pManager.NO_SERVICE_REQUESTS) {
+
+                    // initiate a stop on service discovery
+                    manager.stopPeerDiscovery(channel, new WifiP2pManager.ActionListener() {
+                        @Override
+                        public void onSuccess() {
+                            // initiate clearing of the all service requests
+                            manager.clearServiceRequests(channel, new WifiP2pManager.ActionListener() {
+                                @Override
+                                public void onSuccess() {
+                                    // reset the service listeners, service requests, and discovery
+                                    setServiceListeners();
+                                }
+
+                                @Override
+                                public void onFailure(int i) {
+                                    Log.d(TAG, "FAILED to clear service requests ");
+                                }
+                            });
+
+                        }
+
+                        @Override
+                        public void onFailure(int i) {
+                            Log.d(TAG, "FAILED to stop discovery");
+                        }
+                    });
+                }   
+        
+            </pre>
+
+            <br />
+            
+            
+            
+
+
 
            <p>One device would sometimes initiate a connection, but the other device would not connect back.</p>
 
@@ -353,5 +401,15 @@
 
     </div>
 
+<script src="js/code-styling/shCore.js" type="text/javascript"></script>
+<script src="js/code-styling/shAutoloader.js" type="text/javascript"></script>
+<script src="js/code-styling/shBrushJava.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
+
 </body>
+
+
 </html>
