@@ -176,7 +176,7 @@
                     <h3 class="nocaps">Watch out for these quirks</h3>
                     <p>
                     In order to find each other, both devices must call <a href="http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverServices(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)">WiFiP2pManager.discoverServices</a>, not just one. This method puts the devices in the FIND phase, in which they both advertise and listen for nearby services. If you do not call <a href="http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverServices(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)">WiFiP2pManager.discoverServices</a>, your device will not advertise itself, and other devices will not be able to find it.
-                    <a href="https://code.google.com/p/android/issues/detail?id=37425">https://code.google.com/p/android/issues/detail?id=37425</a></p>
+                    <a href="https://code.google.com/p/android/issues/detail?id=37425">Issue report on the Android issue tracker.</a></p>
 
                     <p>The Android specification claims that service discovery continues until the phone finds a device, but it was not very reliable in our tests. Sometimes devices failed to find each other, but later found each other if we called <a href="http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverServices(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)">WiFiP2pManager.discoverServices</a> a second time.</p>
                 </div>
@@ -270,11 +270,11 @@
             <h3 class="nocaps white">All connections must be approved by the user</h3>
             <p>As it stands, the Wi-Fi Direct implementation on Android requires a user to accept an incoming connection the first time the phones connect. There is a pending Android feature request for a way to automatically accept connections in Wi-Fi Direct.</p>
 
-            <p><a href="https://code.google.com/p/android/issues/detail?id=30880">https://code.google.com/p/android/issues/detail?id=30880</a></p>
+            <p><a href="https://code.google.com/p/android/issues/detail?id=30880">Issue report on the Android issue tracker.</a></p>
 
             <p>You can automatically reconnect to a group to which you have already connected, because Wi-Fi Direct contains a specification for remembering “persistent groups,” but these groups are fairly rigid, because the group owner of the previously formed persistent group must remain the group owner, when the group is re-formed.</p>
 
-            <p><a href="http://stackoverflow.com/questions/15152817/persistent-group-in-wi-fi-direct">http://stackoverflow.com/questions/15152817/persistent-group-in-wi-fi-direct</a></p>
+            <p><a href="http://stackoverflow.com/questions/15152817/persistent-group-in-wi-fi-direct">Stack Overflow question.</a></p>
             
             <h3 class="nocaps white">A spoke network is the only possible topology</h3>
             <p>The network requires one, and only one, peer to act as a software access point.</p>
@@ -290,11 +290,11 @@
             <h2 id="bugs" class="section_title_drakgray">Issues to watch out for</h2>
 
             <h3 class="nocaps">Only use Wi-Fi Direct on Android 4.2 Jelly Bean and above</h3>
-            <p>It is buggy on versions below 4.2. <a href="https://code.google.com/p/android/issues/detail?id=43004">https://code.google.com/p/android/issues/detail?id=43004</a></p>
+            <p>It is buggy on versions below 4.2. <a href="https://code.google.com/p/android/issues/detail?id=43004">Issue report on the Android issue tracker.</a></p>
 
             <h3 class="nocaps">The MAC address of a device reported by service discovery differs from the hardware address of the network interface that is actually used by the connection.</h3>
             <p>This is intentional, but can be confusing if you are unaware.</p>
-            <p><a href="">https://code.google.com/p/android/issues/detail?id=53437</a></p>
+            <p><a href="https://code.google.com/p/android/issues/detail?id=53437">Issue report on the Android issue tracker.</a></p>
 
             <h3 class="nocaps">Wi-Fi Direct is not fully supported on all hardware, even if it running Android 4.4.2 or later.</h3>
             <p>For example, the Moto G cannot connect to a Wi-Fi Direct group and a standard Wi-Fi AP at the same time.</p>
@@ -376,8 +376,7 @@
             <p>A MANET allows for much more flexible network configurations than Wi-Fi Direct. Clearly, a MANET would be optimal for creating a peer-to-peer version of Facebook because peers are constantly moving in and out of range of new peers. Unfortunately, <strong>802.11 ad-hoc mode is not supported in Android</strong> (there is a <a href="https://code.google.com/p/android/issues/detail?id=82">pending feature request</a>).</p>
 
             <p id="1">
-            [1] Quorum-Based Asynchronous Power-Saving Protocols for IEEE 802.11 Ad Hoc Networks <br>
-            <a href="">http://dx.doi.org/10.1023/B%3AMONE.0000048553.45798.5e</a>
+            [1] <a href="http://dx.doi.org/10.1023/B%3AMONE.0000048553.45798.5e">Quorum-Based Asynchronous Power-Saving Protocols for IEEE 802.11 Ad Hoc Networks</a>
             </p>
         </div>
         </div>
