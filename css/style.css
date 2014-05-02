@@ -172,7 +172,11 @@
 	padding: 70px 0px;
 	width: 100%;
 }
-
+.features_wifidirect.two {
+	float: left;
+	padding: 70px 0px 0px;
+	width: 100%;
+}
 .features_wifidirect h2 {
 	text-align: center;
 }
