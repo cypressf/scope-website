@@ -156,7 +156,7 @@
         <div class="container">
             <ul>
                 <li class="icon"><a id="q_p2p_vulnerability" href = "#questions"><i class="fa fa-briefcase"></i></a></li>
-                <li><h2><strong>Is P2P vulnerable to people stealing my data?</strong></h2></li>
+                <li><h2 class="black"><strong>Is P2P vulnerable to people stealing my data?</strong></h2></li>
             </ul>
       
             <p>Access to data over the P2P connection in this app is open to anyone with the same app and service name. Posts are shared across P2P based on newsfeed ids and mutual friend ids. In any scenario in which a peer is capable of acquiring overlapping newsfeed ids or friend ids, that peer will have access to any posts that match those ids.</p><br>
@@ -174,7 +174,7 @@
         <div class="container">
             <ul>
                 <li class="icon"><a id="q_access_permissions" href = "#questions"><i class="fa fa-unlock"></i></a></li>
-                <li class="text"><h2><strong>Will peers have access to posts they don’t have permission to see?</strong></h2></li>
+                <li class="text"><h2 class="black"><strong>Will peers have access to posts they don’t have permission to see?</strong></h2></li>
             </ul>
             <p>Currently peers will have access to public and mutual friend posts. Public posts do have privacy permission issues, but mutual friend posts may have some complications. In the case that a post by a mutual friend has been set to be visible only to the original receiver of the post, a peer will still be sent that post because the app does not address privacy settings.</p>
         
@@ -187,7 +187,7 @@
         <div class="container">
             <ul>
                 <li class="icon"><a id="q_offline_fb" href = "#questions"><i class="fa fa-group"></i></a></li>
-                <li class="text"><h2><strong>How can people interact with an “offline” Facebook?</strong></h2> </li>
+                <li class="text"><h2 class="black"><strong>How can people interact with an “offline” Facebook?</strong></h2> </li>
             </ul>
             <p>Many Android phones do not have SIM cards. These phones will never connect to the Facebook server directly.</p><br>
             <p>When an offline user posts, the post will remain cached on only their phone.</p><br>
@@ -204,7 +204,7 @@
         <div class="container">
             <ul>
                 <li class="icon"><a id="q_api_changes" href = "#questions"><i class="fa fa-eraser"></i></a></li>
-                <li class="text"><h2><strong>What changes to the FB API and Android will assist the sharing of news feed data?</strong></h2></li>
+                <li class="text"><h2 class="black"><strong>What changes to the FB API and Android will assist the sharing of news feed data?</strong></h2></li>
             </ul>
             <p>Each peer needs to know what they can share with who. The Facebook API could include privacy settings of each post. For example, if a post on someone’s newsfeed is available to friends A, B, and C, that phone would share the post with peers who identify themselves as A, B, and C.</p>
         
@@ -217,7 +217,7 @@
         <div class="container">
             <ul>
                 <li class="icon"><a id="q_newsfeed_quality" href = "#questions"><i class="fa fa-thumbs-o-up"></i></a></li>
-                <li class="text"><h2><strong>How will sharing news feed posts between phones offline influence news feed ranking and overall quality?</strong></h2> </li>
+                <li class="text"><h2 class="black"><strong>How will sharing news feed posts between phones offline influence news feed ranking and overall quality?</strong></h2> </li>
             </ul>
             <p>The overall quality of the news feed will be extremely hard to control for an offline version of Facebook because the phone will be accepting all posts from peers it is allowed to view including public posts. Implementing a client-side news feed ranking system could help.</p><br>
             <p>A client-side news feed ranking system would need to be implemented in order to rank news feed items in an order other than the updated timestamp of the post. Factors to consider in a client-side news feed ranking system include: </p>
@@ -235,7 +235,7 @@
         <div class="container">
             <ul>
                 <li class="icon"><a id="q_buggy_app" href = "#questions"><i class="fa fa-bug"></i></a></li>
-                <li class="text"><h2><strong>What if we deploy a buggy or vulnerable app for the offline users?</strong></h2> </li>
+                <li class="text"><h2 class="black"><strong>What if we deploy a buggy or vulnerable app for the offline users?</strong></h2> </li>
             </ul>
             <p>If someone uses the Facebook app on a phone that never connects to the internet it’s possible that they would not update their app for an extended period of time. If this version of the app is insecure or buggy, Facebook would want a way to terminate or patch the app.</p><br>
             <p>Facebook could potentially patch the app via a peer to peer connection. If the peer the phone connects to has a later version of the app, it could provide an APK or a code patch to a phone with an older version.</p><br>
@@ -250,7 +250,7 @@
         <div class="container">
             <ul>
                 <li class="icon"><a id="q_caching" href = "#questions"><i class="fa fa-folder"></i></a></li>
-                <li class="text"><h2><strong>What caching systems could improve the performance of this app?</strong></h2></li>
+                <li class="text"><h2 class="black"><strong>What caching systems could improve the performance of this app?</strong></h2></li>
             </ul>
             <p>The caching algorithm could change based on whether or not the phone is charging, how much space it has available, and what type of network connection it has.</p><br>
             <p>Facebook could design a caching algorithm to cache content that is likely to be shared with peers down the road. Over time, the app could learn which peers it is most likely to connect to, and could adapt its cache to increase the hit rate.</p><br>
@@ -268,7 +268,7 @@
         <div class="container">
             <ul>
                 <li class="icon"><a id="q_battery" href = "#questions"><i class="fa fa-mobile-phone"></i></a></li>
-                <li class="text"><h2><strong>How will this app impact my phone’s battery?</strong></h2></li>
+                <li class="text"><h2 class="black"><strong>How will this app impact my phone’s battery?</strong></h2></li>
             </ul>
             <p>“The three most important considerations for mobile applications are, in order: battery life, battery life, and battery life.” — A Google Engineer</p><br>
 
@@ -300,7 +300,7 @@
         <div class="container">
             <ul>
                 <li class="icon"><a id="q_space_memory" href = "#questions"><i class="fa fa-hdd-o"></i></a></li>
-                <li class="text"><h2><strong>Will the app consume more disk space and memory due to peer caching?</strong></h2></li>
+                <li class="text"><h2 class="black"><strong>Will the app consume more disk space and memory due to peer caching?</strong></h2></li>
             </ul>
             <p>Yes. If we are caching data for other peers, as well as ourselves, the app would use more disk space and memory, however we could cap the cache size depending on the available space on the phone on which it is installed. That would insure that app would never consume too many resources.</p><br>
 
@@ -317,7 +317,7 @@
         <div class="container">
             <ul>
                 <li class="icon"><a id="q_data_sharing_transparency" href = "#questions"><i class="fa fa-exchange"></i></a></li>
-                <li class="text"><h2><strong>How transparent is the data sharing? How is it controlled by the user?</strong></h2></li>
+                <li class="text"><h2 class="black"><strong>How transparent is the data sharing? How is it controlled by the user?</strong></h2></li>
             </ul>
             <p>The user controls their data consumption by selecting one of the data usage modes, which determines what kind of posts they view in their news feed (see the product explanation page). The user also controls whether or not they accept a connection with a peer the first time they connect.</p><br>
 
