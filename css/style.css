@@ -2936,6 +2936,10 @@ ul.fun_facts {
 	border-top: 1px solid #e0e0e0;
 	border-bottom: 1px solid #e0e0e0;
 }
+.features_sec47 h2 {
+	color: #000;
+	font-weight: 600;
+}
 .features_sec47 ul {
 	float: left;
 	width: 100%;
@@ -2964,6 +2968,9 @@ ul.fun_facts {
 .features_sec47 .hvideo iframe {
 	width: 640px;
 	height: 360px;
+}
+.features_sec47 .offline-text {
+	text-align: left;
 }
 
 /* page title */
