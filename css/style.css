@@ -184,6 +184,10 @@
 	padding-bottom:1em;
 }
 
+.features_wifidirect img {
+	max-width:100%;
+}
+
 .features_dark {
 	background-color: #272727;
 }
