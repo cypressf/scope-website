@@ -2142,8 +2142,8 @@ ul.fun_facts {
   background-clip: initial;
   background-size: cover;
   background-repeat:no-repeat;
-  background-position:100% 0;
-  background-position: center bottom;
+  background-position:10% 0;
+  
 }
 .features_sec30 h2 {
 	margin-bottom: 20px;
