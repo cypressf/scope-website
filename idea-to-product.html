@@ -127,19 +127,13 @@
                 
                 <ul>
                     <li class="icon"><a href="#q_battery"><i class="fa fa-mobile-phone"></i></a></li>
-                    <li class="text"><h4 class="nocaps"><a href="#q_battery">&nbsp;&nbsp;&nbsp; How will this app impact my phone’s battery? </a></h4></li>
+                    <li class="text"><h4 class="nocaps"><a href="#q_battery">&nbsp;&nbsp;&nbsp; How will this app impact a phone’s battery? </a></h4></li>
                 </ul>
                 
                 <ul>
                     <li class="icon"><a href="#q_space_memory"><i class="fa fa-hdd-o"></i><a></li>
                     <li class="text"><h4 class="nocaps"><a href="#q_space_memory">Will the app consume more disk space and memory due to peer caching?</a></h4> </li>
                 </ul>
-                
-                <ul>
-                    <li class="icon"><a href="#q_data_sharing_transparency"><i class="fa fa-exchange"></i></a></li>
-                    <li class="text"><h4 class="nocaps"><a href="#q_data_sharing_transparency">How transparent is the data sharing? How is it controlled by the user?</a></h4> </li>
-                </ul>
-
 
             </div><!-- end section -->
 
@@ -217,12 +211,9 @@
                 <li class="icon"><a id="q_caching" href = "#questions"><i class="fa fa-folder"></i></a></li>
                 <li class="text"><h2 class="black"><strong>What caching systems could improve the performance of this app?</strong></h2></li>
             </ul>
-            <p>The caching algorithm could change based on whether or not the phone is charging, how much space it has available, and what type of network connection it has.</p><br>
-            <p>Facebook could design a caching algorithm to cache content that is likely to be shared with peers down the road. Over time, the app could learn which peers it is most likely to connect to, and could adapt its cache to increase the hit rate.</p><br>
-            <p>The app should cache entire newsfeed posts, not simply individual photos and videos.</p><br>
-            <p>Caching individual photos and videos is helpful because they are costly to obtain, but peers that are completely offline will want to see context, such as the newsfeed post the photo appears in.</p><br>
-            <p>Should we allow caching of items that a user is not able to view, but that they could transmit to peers? </p><br>
-            <p>The server could potentially give a client items that it doesn’t have permission to view, but encrypt them so the client who holds them doesn’t have access to them, but instead only has access to IDs. If a peer then asks our client for those IDs, that peer could download them via a P2P connection, and decrypt the items that it has access to via a key it gets from Facebook servers.</p>
+            <p>One idea is that the caching algorithm is dependent on whether or not the phone is charging, how much space it has available, and what type of network connection it has. Facebook could design a caching algorithm to cache content that is likely to be shared with peers down the road. Over time, the app could learn which peers it is most likely to connect to, and could adapt its cache to increase the hit rate.</p><br>
+            <p>Another system can be implemented wherein the app should cache entire newsfeed posts, not simply individual photos and videos. Caching individual photos and videos is helpful because they are costly to obtain, but peers that are completely offline will want to see context, such as the newsfeed post the photo appears in.</p><br>
+            <p>Finally, we can have a caching policy where in a phones caches items solely for the purpose of transmitting to peers (data which the cache phone user doesn't have access to see). The server could potentially give a client items that it doesn’t have permission to view, but encrypt them so the client who holds them doesn’t have access to them, but instead only has access to IDs. If a peer then asks our client for those IDs, that peer could download them via a P2P connection, and decrypt the items that it has access to via a key it gets from Facebook servers.</p>
         
             <div class="clearfix divider_dashed9"></div>
 
@@ -233,26 +224,24 @@
         <div class="container">
             <ul>
                 <li class="icon"><a id="q_battery" href = "#questions"><i class="fa fa-mobile-phone"></i></a></li>
-                <li class="text"><h2 class="black"><strong>How will this app impact my phone’s battery?</strong></h2></li>
+                <li class="text"><h2 class="black"><strong>How will this app impact a phone’s battery?</strong></h2></li>
             </ul>
             <p>Most mobile developers know that battery life is crucial for the success of a mobile application. Because our app relies heavily on WiFi P2P connections, the app spawns a service that is persistent after closing the activity. This service will use the WiFi antenna to find nearby peers and transfer data, which will consume battery life.</p><br>
 
             <p>We can modify the behavior of the app depending on the current state of the battery. If the phone is charging, we can constantly search for peers and transmit data as shown in <a href="http://developer.android.com/training/monitoring-device-state/battery-monitoring.html" >android's battery monitoring guide </a>.</p><br>
             
 
-            <p>Peer service discovery uses the WiFi antenna, which consumes roughly 200mA.</p><br>
+            <p>Peer service discovery uses the WiFi antenna, which consumes roughly 200mA. At that rate, a 2,000 mAh phone battery would die after 10 hrs (not even taking into account the power consumption due to CPU use, or the power consumption due to any other app, or the screen). Compare this to a phone in standby with WiFi idle, which would consume roughly 10mA, and last 20 times as long on a single charge.</p><br>
+            
 
-            <p>At that rate, a 2,000 mAh phone battery would die after 10 hrs (not even taking into account the power consumption due to CPU use, or the power consumption due to any other app, or the screen). Compare this to a phone in standby with WiFi idle, which would consume roughly 10mA, and last 20 times as long on a single charge.</p><br>
+            <p>We can minimize the impact on battery life by batching all our requests, so as not to keep the WiFi antenna on. We can wake up all our apps every ten minutes to do a quick peer search, then let the antenna go back to sleep. Assuming all the apps wake up at the same time (based on Android’s clock) we will find new peers to connect to every ten minutes. Because P2P speeds are substantially better than a normal LAN connection, the both time and load of WiFi usage that is actively used by the app is lower.</p><br>
 
-            <p>https://www.youtube.com/watch?v=OUemfrKe65c</p><br>
-            <p>http://developer.android.com/training/connect-devices-wirelessly/nsd-wifi-direct.html</p><br>
-
-            <p>We can minimize the impact on battery life by batching all our requests, so as not to keep the WiFi antenna on. We can wake up all our apps every ten minutes to do a quick peer search, then let the antenna go back to sleep. Assuming all the apps wake up at the same time (based on Android’s clock) we will find new peers to connect to every ten minutes.</p><br>
-
-            <p>Because P2P speeds are substantially better than a normal LAN connection, the both time and load of WiFi usage that is actively used by the app is lower.</p><br>
-            <p>https://www.usenix.org/legacy/event/usenix10/tech/full_papers/Carroll.pdf</p><br>
-            <p>http://cs.gmu.edu/~astavrou/research/Android_Power_Measurements_Analysis_SERE_12.pdf
-             - theory on wifi -consumption calculation based on activity. also average measurements</p>
+            <p> Sources: </p>
+            <a href="https://www.youtube.com/watch?v=OUemfrKe65c">https://www.youtube.com/watch?v=OUemfrKe65c</a>
+            <a href="http://developer.android.com/training/connect-devices-wirelessly/nsd-wifi-direct.html"> <br/>http://developer.android.com/training/connect-devices-wirelessly/nsd-wifi-direct.html</a><br/>
+            <a href="https://www.usenix.org/legacy/event/usenix10/tech/full_papers/Carroll.pdf">https://www.usenix.org/legacy/event/usenix10/tech/full_papers/Carroll.pdf</a><br/>
+            <a href="http://cs.gmu.edu/~astavrou/research/Android_Power_Measurements_Analysis_SERE_12.pdf">
+             http://cs.gmu.edu/~astavrou/research/Android_Power_Measurements_Analysis_SERE_12.pdf</a>
         
             <div class="clearfix divider_dashed9"></div>
 
@@ -267,8 +256,6 @@
             </ul>
             <p>Yes. If we are caching data for other peers, as well as ourselves, the app would use more disk space and memory, however we could cap the cache size depending on the available space on the phone on which it is installed. That would insure that app would never consume too many resources.</p><br>
 
-            <p>If the cache is limited at a very small size, but the phone is charging and connected to an u
-
             Disk space and memory will probably not our main concern in the future. They are rapidly getting cheaper.</p><br>
         
             <div class="clearfix divider_dashed9"></div>
@@ -276,19 +263,6 @@
         </div>
         </div>
 
-        <div class="features_questions">
-        <div class="container">
-            <ul>
-                <li class="icon"><a id="q_data_sharing_transparency" href = "#questions"><i class="fa fa-exchange"></i></a></li>
-                <li class="text"><h2 class="black"><strong>How transparent is the data sharing? How is it controlled by the user?</strong></h2></li>
-            </ul>
-            <p>The user controls their data consumption by selecting one of the data usage modes, which determines what kind of posts they view in their newsfeed (see the product explanation page). The user also controls whether or not they accept a connection with a peer the first time they connect.</p><br>
-
-            <p>The user sees where each newsfeed posts comes from by the title of the newsfeed items and the color of the item.</p><br>
-
-            <p>The user doesn’t see the newsfeed data they share with others, precisely how much data they download from Facebook and/or their peers, and how their friend list is shared with their peers.</p>
-        </div>
-        </div>
 
         <div class="clearfix margin_top5"></div>
 
