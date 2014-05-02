@@ -23,6 +23,7 @@
 /*------------------------------------------------------*/
 .content-menu {
 	padding: 0 25%;
+	text-align: left;
 	width: 50%;
 }
 .data-logger {
@@ -186,6 +187,31 @@
 
 .features_wifidirect img {
 	max-width:100%;
+}
+.features_wifidirect ul {
+	float: left;
+	width: 100%;
+	padding: 0px;
+	margin: 0px 0px 30px 0px;
+}
+.features_wifidirect li {
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+}
+.features_wifidirect li.icon {
+	float: left;
+	color: #fc4242;
+	font-size: 38px;
+	margin-right: 20px;
+}
+.features_wifidirect li.text {
+	float: left;
+	width: 85%;
+}
+.features_wifidirect li.text h4 {
+	font-weight: 500;
+	margin-bottom: 8px;
 }
 
 .features_dark {
@@ -2974,7 +3000,7 @@ ul.fun_facts {
 .page_title {
 	float: left;
 	width: 100%;
-	padding: 90px 0px 85px 0px;
+	padding: 70px 0px 70px 0px;
 	text-align: center;
 	font-size: 16px;
 	color: #999;

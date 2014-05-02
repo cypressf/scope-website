@@ -85,28 +85,32 @@
         </header>
 
 
-        <div class="features_sec31">
+        <div class="page_title">
         <div class="container">
 
             <div class="content-menu">
             
                 <center>
-                    <h2 class="section_title_drakgray center" style="margin-bottom: 30px;"><strong>Wi-Fi</strong> Direct</h2>
+                    <h1 class="section_title_white center" style="margin-bottom: 30px;"><strong>Wi-Fi</strong> Direct</h1>
                     <p>Create peer-to-peer connections over Wi-Fi</a></p>
                     <br />
                 </center>
 
-                <ul>
-                    <a href="#what-is-it"><li><i class="fa fa-angle-right"></i>&nbsp; What is it?</li></a>
-                    <a href="#how-to-use"><li><i class="fa fa-angle-right"></i>&nbsp; How to use it on Android</li></a>
-                    <a href="#limitations"><li><i class="fa fa-angle-right"></i>&nbsp; Limitations of the protocol</li></a>
-                </ul>
+                <div class="one_half">
+                    <ul>
+                        <a href="#what-is-it"><li><i class="fa fa-angle-right"></i>&nbsp; What is it?</li></a>
+                        <a href="#how-to-use"><li><i class="fa fa-angle-right"></i>&nbsp; How to use it on Android</li></a>
+                        <a href="#limitations"><li><i class="fa fa-angle-right"></i>&nbsp; Limitations of the protocol</li></a>
+                    </ul>
+                </div>
                 
-                <ul>
-                    <a href="#bugs"><li><i class="fa fa-angle-right"></i>&nbsp; Issues to watch out for</li></a>
-                    <a href="#alternatives"><li><i class="fa fa-angle-right"></i>&nbsp; Alternatives to Wi-Fi Direct</li></a>
-                    <a href="#read-more-wifi-direct"><li><i class="fa fa-angle-right"></i>&nbsp; Read More about Wi-Fi Direct</li></a>
-                </ul>
+                <div class="one_half last">
+                    <ul>
+                        <a href="#bugs"><li><i class="fa fa-angle-right"></i>&nbsp; Issues to watch out for</li></a>
+                        <a href="#alternatives"><li><i class="fa fa-angle-right"></i>&nbsp; Alternatives to Wi-Fi Direct</li></a>
+                        <a href="#read-more-wifi-direct"><li><i class="fa fa-angle-right"></i>&nbsp; Read More about Wi-Fi Direct</li></a>
+                    </ul>
+                </div>
             </div>
               
         </div>
@@ -114,7 +118,7 @@
 
         <div class="clearfix"></div>
 
-        <div class="features_wifidirect">
+        <div class="features_dark features_wifidirect">
         <div class="container">
             <h2 class="section_title_drakgray" id="what-is-it">What is it?</h2>
             <div class="one_half">
@@ -132,37 +136,49 @@
         </div>
         </div>
 
-        <div class="features_dark features_wifidirect">
-        <div class="container">
-            <h2 id="how-to-use" class="section_title_drakgray">How to use it on Android</h2>
-            <ol>
-                <li><a href="#initiate_service_discovery">Use service discovery (not peer discovery) to find nearby phones</a></li>
-                <li><a href="#connect_to_peers">Connect to the phones you have found</a></li>
-                <li><a href="#make_peers_talk">Make peers talk</a></li>
-            </ol>
-
-
-            <div class="container">
-            <div class="one_half">
-            <p>There are two methods of finding nearby peers:</p>
-            <ul>
-                <li><strong>Peer discovery</strong> finds all nearby peers with WiFi Direct.</li>
-                <li><strong>Service discovery</strong> finds all nearby peers with WiFi Direct that are running the same app.</li>
-            </ul>
-
-            </div>
-
-            <div class="one_half last">
-                <p><strong>For the purposes of a peer-to-peer app, <em>service discovery</em> is more useful.</strong></p>
-
-            </div>
-            </div>
-    </div>
-    </div>
-
         <div class="features_wifidirect">
         <div class="container">
-            <h2 class="section_title_drakgray" id="initiate_service_discovery">Initiate service discovery</h2>
+            
+            <h2 id="how-to-use" class="section_title_drakgray">How to use it on Android</h2>
+
+            <div class="one_half">
+        
+                <ul>
+                    <li class="icon"><a href="#initiate_service_discovery"><i class="fa fa-search"></i></a></li>
+                    <li class="text"><h4 class="nocaps"><a href="#initiate_service_discovery">Use service discovery (not peer discovery) to find nearby phones</a></h4> </li>
+                </ul>
+                
+                <ul>
+                    <li class="icon"><a href="#connect_to_peers"><i class="fa fa-mobile-phone"></i></a></li>
+                    <li class="text"><h4 class="nocaps"><a href="#connect_to_peers">&nbsp;&nbsp;&nbsp;Connect to the phones you have found</a></h4> </li>
+                </ul>
+                                
+                
+                <ul>
+                    <li class="icon"><a href="#make_peers_talk"><i class="fa fa-phone"></i></a></li>
+                    <li class="text"><h4 class="nocaps"><a href="#make_peers_talk">Make peers talk</a></h4> </li>
+                </ul>
+
+            </div><!-- end section -->
+            <div class="one_half last">
+                <p>There are two methods of finding nearby peers:</p>
+                <ol>
+                    <li><strong>Peer discovery</strong> finds all nearby peers with WiFi Direct.</li>
+                    <li><strong>Service discovery</strong> finds all nearby peers with WiFi Direct that are running the same app.</li>
+                </ol>
+                <p><strong>For the purposes of a peer-to-peer app, <em>service discovery</em> is more useful.</strong></p>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="features_questions">
+        <div class="container">
+
+            <ul>
+                <li class="icon"><a id="initiate_service_discovery"<i class="fa fa-search"></i></a></li>
+                <li><h2 class="black"><strong>Initiate service discovery</strong></h2></li>
+            </ul>
             
             <div class="container">
                 <div class="one_half">
@@ -180,12 +196,19 @@
                     <p>The Android specification claims that service discovery continues until the phone finds a device, but it was not very reliable in our tests. Sometimes devices failed to find each other, but later found each other if we called <a href="http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverServices(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)">WiFiP2pManager.discoverServices</a> a second time.</p>
                 </div>
             </div>
+
         </div>
         </div>
 
-    <div class="features_wifidirect">
-    <div class="container">
-            <h2 class="section_title_drakgray" id="connect_to_peers">Connect to peers</h2>
+        <div class="clearfix margin_top5"></div>
+
+        <div class="features_questions">
+        <div class="container">
+
+            <ul>
+                <li class="icon"><a id="connect_to_peers"><i class="fa fa-mobile-phone"></i></a></li>
+                <li><h2 class="black"><strong>&nbsp;&nbsp;&nbsp;Connect to peers</strong></h2></li>
+            </ul>
 
             <div class="container">
                 <div class="one_half">
@@ -206,12 +229,20 @@
                     </ol>
                 </div>
             </div>
-    </div>
-    </div>
 
-    <div class="features_wifidirect">
-    <div class="container">
-            <h2 class="section_title_drakgray" id="make_peers_talk">Make peers talk</h2>
+        </div>
+        </div>
+
+        <div class="clearfix margin_top5"></div>
+
+        <div class="features_questions">
+        <div class="container">
+
+            <ul>
+                <li class="icon"><a id="make_peers_talk"<i class="fa fa-phone"></i></a></li>
+                <li><h2 class="black"><strong>Make peers talk</strong></h2></li>
+            </ul>
+            
             <div class="container">
             <div class="two_third">
                 <img src="images/WiFiDirectPeerTalk1.png">
@@ -266,7 +297,7 @@
         <div class="container">
             <h2 id="limitations" class="section_title_drakgray">Limitations of the protocol</h2>
 
-            <h3 class="nocaps white">All connections must be approved by the user</h3>
+            <h3 class="nocaps">All connections must be approved by the user</h3>
             <p>As it stands, the Wi-Fi Direct implementation on Android requires a user to accept an incoming connection the first time the phones connect. There is a pending Android feature request for a way to automatically accept connections in Wi-Fi Direct.</p>
 
             <p><a href="https://code.google.com/p/android/issues/detail?id=30880">Issue report on the Android issue tracker.</a></p>
@@ -275,10 +306,10 @@
 
             <p><a href="http://stackoverflow.com/questions/15152817/persistent-group-in-wi-fi-direct">Stack Overflow question.</a></p>
             
-            <h3 class="nocaps white">A spoke network is the only possible topology</h3>
+            <h3 class="nocaps">A spoke network is the only possible topology</h3>
             <p>The network requires one, and only one, peer to act as a software access point.</p>
 
-            <h3 class="nocaps white">There are no ad-hoc capabilities</h3>
+            <h3 class="nocaps">There are no ad-hoc capabilities</h3>
             <p>The network cannot dynamically change. If a group owner drops out, the network dies.</p>
 
         </div>
