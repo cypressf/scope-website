@@ -22,8 +22,8 @@
 /*	SARAH'S ADDITIONS
 /*------------------------------------------------------*/
 .content-menu {
-	padding: 0 15%;
-	width: 70%;
+	padding: 0 25%;
+	width: 50%;
 }
 .data-logger {
 	font-size: 22px;
@@ -189,13 +189,10 @@
 }
 
 .features_dark {
-	background-color: #272727;
+	background-color: #f3f3f3;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
 }
-
-.features_dark a:hover {
-	color:#fff;
-}
-
 
 
 
