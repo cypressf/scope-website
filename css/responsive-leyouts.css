@@ -100,7 +100,6 @@
 	width: 80%;
 	height: 400px;
 }
-
 .features_sec31 .img_left {
 	width: 100%;
 }
@@ -144,6 +143,10 @@
 }
 .features_sec39 .rightsection ul.three {
 	margin-top: 40px;
+}
+.features_sec39 .hvideo iframe {
+	width: 80%;
+	height: 400px;
 }
 
 .circle_img {
@@ -446,6 +449,10 @@ h1.section_title_drakgray {
 	float: left;
 	width: 100%;
 	padding-bottom: 50px;
+}
+.features_sec39 .hvideo iframe {
+	width: 80%;
+	height: 370px;
 }
 
 .features_sec43 li.text {
@@ -902,6 +909,10 @@ ul.post_meta_links_small {
 }
 .features_sec39 .rightsection li.text {
 	width: 75%;
+}
+.features_sec39 .hvideo iframe {
+	width: 90%;
+	height: 300px;
 }
 
 .features_sec44 .img_right {
@@ -1766,6 +1777,10 @@ ul.adsbanner-list {
 }
 .features_sec39 .rightsection li.icon {
 	margin-right: 20px;
+}
+.features_sec39 .hvideo iframe {
+	width: 94%;
+	height: 200px;
 }
 
 .features_sec43 li.text {
