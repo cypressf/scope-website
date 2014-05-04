@@ -3022,6 +3022,9 @@ ul.fun_facts {
 	text-transform: none;
 	background: url(../images/h-line1.png) no-repeat center bottom;
 }
+.page_title a:hover {
+	color: #fff;
+}
 
 .page_title2 {
 	position: relative;
