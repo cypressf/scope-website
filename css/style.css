@@ -1124,6 +1124,7 @@ h3.ipages_title1.two {
 	margin: 0px;
 }
 .features_sec11 .hblog h2{
+	color: #272727;
 	margin-bottom: 0px;
 }
 .features_sec11 .hblog img {
@@ -1193,12 +1194,12 @@ h3.ipages_title1.two {
 	color: #fc4242;
 }
 
-.features_sec11 .hblog:hover {
+/*.features_sec11 .hblog:hover {
 	border-bottom: 4px solid #fc4242;
 	-moz-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
 	box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
-}
+}*/
 .features_sec11 .hblog.active {
 	border-bottom: 4px solid #fc4242;
 	-moz-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
