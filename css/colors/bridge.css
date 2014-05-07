@@ -193,9 +193,9 @@ h2.ipages_title1 a:hover{
 .features_sec11 .hblog .comments a:hover {
 	color: #a5d549;
 }
-.features_sec11 .hblog:hover {
+/*.features_sec11 .hblog:hover {
 	border-bottom: 4px solid #a5d549;
-}
+}*/
 .features_sec11 .hblog.active {
 	border-bottom: 4px solid #a5d549;
 }

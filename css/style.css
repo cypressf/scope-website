@@ -22,8 +22,9 @@
 /*	SARAH'S ADDITIONS
 /*------------------------------------------------------*/
 .content-menu {
-	padding: 0 15%;
-	width: 70%;
+	padding: 0 25%;
+	text-align: left;
+	width: 50%;
 }
 .data-logger {
 	font-size: 22px;
@@ -171,7 +172,11 @@
 	padding: 70px 0px;
 	width: 100%;
 }
-
+.features_wifidirect.two {
+	float: left;
+	padding: 70px 0px 0px;
+	width: 100%;
+}
 .features_wifidirect h2 {
 	text-align: center;
 }
@@ -187,15 +192,37 @@
 .features_wifidirect img {
 	max-width:100%;
 }
+.features_wifidirect ul {
+	float: left;
+	width: 100%;
+	padding: 0px;
+	margin: 0px 0px 30px 0px;
+}
+.features_wifidirect li {
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+}
+.features_wifidirect li.icon {
+	float: left;
+	color: #fc4242;
+	font-size: 38px;
+	margin-right: 20px;
+}
+.features_wifidirect li.text {
+	float: left;
+	width: 85%;
+}
+.features_wifidirect li.text h4 {
+	font-weight: 500;
+	margin-bottom: 8px;
+}
 
 .features_dark {
-	background-color: #272727;
+	background-color: #f3f3f3;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
 }
-
-.features_dark a:hover {
-	color:#fff;
-}
-
 
 
 
@@ -1097,6 +1124,7 @@ h3.ipages_title1.two {
 	margin: 0px;
 }
 .features_sec11 .hblog h2{
+	color: #272727;
 	margin-bottom: 0px;
 }
 .features_sec11 .hblog img {
@@ -1166,12 +1194,12 @@ h3.ipages_title1.two {
 	color: #fc4242;
 }
 
-.features_sec11 .hblog:hover {
+/*.features_sec11 .hblog:hover {
 	border-bottom: 4px solid #fc4242;
 	-moz-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
 	box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
-}
+}*/
 .features_sec11 .hblog.active {
 	border-bottom: 4px solid #fc4242;
 	-moz-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
@@ -2145,8 +2173,8 @@ ul.fun_facts {
   background-clip: initial;
   background-size: cover;
   background-repeat:no-repeat;
-  background-position:100% 0;
-  background-position: center bottom;
+  background-position:10% 0;
+  
 }
 .features_sec30 h2 {
 	margin-bottom: 20px;
@@ -2555,8 +2583,11 @@ ul.fun_facts {
 	height: 420px;
 }
 .features_sec39 .three-g-network {
+	height: auto;
 	padding-top: 10px;
+	margin: 0 25%;
 	position: relative;
+	width: 50%;
 }
 .features_sec39 .three-g-network .america {
 	float: left;
@@ -2596,6 +2627,21 @@ ul.fun_facts {
 	margin-bottom: 18px;
 	border-top: 1px solid #e3e3e3;
 	border-bottom: 1px solid #e3e3e3;
+}
+.features_sec39 .hvideo {
+	padding-bottom: 20px;
+}
+.features_sec39 .hvideo iframe {
+	width: 640px;
+	height: 360px;
+}
+.features_sec39 .rightsection-vid {
+	padding-top: 70px;
+}
+.features_sec39 .problem-text {
+	float: left;
+	position: relative;
+	width: 100%;
 }
 /* features section 40 */
 .features_sec40 {
@@ -2918,6 +2964,10 @@ ul.fun_facts {
 	border-top: 1px solid #e0e0e0;
 	border-bottom: 1px solid #e0e0e0;
 }
+.features_sec47 h2 {
+	color: #000;
+	font-weight: 600;
+}
 .features_sec47 ul {
 	float: left;
 	width: 100%;
@@ -2947,12 +2997,15 @@ ul.fun_facts {
 	width: 640px;
 	height: 360px;
 }
+.features_sec47 .offline-text {
+	text-align: left;
+}
 
 /* page title */
 .page_title {
 	float: left;
 	width: 100%;
-	padding: 90px 0px 85px 0px;
+	padding: 70px 0px 70px 0px;
 	text-align: center;
 	font-size: 16px;
 	color: #999;
@@ -2968,6 +3021,9 @@ ul.fun_facts {
 	padding-bottom: 25px;
 	text-transform: none;
 	background: url(../images/h-line1.png) no-repeat center bottom;
+}
+.page_title a:hover {
+	color: #fff;
 }
 
 .page_title2 {
